@@ -1,11 +1,11 @@
 ---
-title: "Übung 03"
-author: "Sascha Metzger - 1910837830 - DSIA Algorithmik & Statistik, SS 2020"
+title: "Übung 3"
+lecture: "DSIA Algorithmik & Statistik, SS 2020"
+author: "Sascha Metzger - 1910837830"
 date: '2019-01-01 (updated: `r Sys.Date()`)'
 output:
   html_document:
     df_print: paged
-urlcolor: cyan
 ---
 
 ```{r options, include = FALSE}
@@ -17,13 +17,25 @@ Bitte um Beachtung der [Übungs-Policy](https://algo2-lab.netlify.com/%C3%BCbung
 Angedachte Bearbeitungszeit: ca. 4 Std.
 
 ***
+```{r setup, warning=FALSE, message=F}
+library(dplyr)
+library(caret)
+library(mlbench)
+library(ggplot2)
+library(kableExtra)
+
+library(randomForest)
+library(gbm)
+library(rpart)
+library(rpart.plot)
+```
+
 
 # Aufgabe 1 (Computation Time)
 
 **[8 points]** Für diese Übung werden wir Daten mittels Simulation erstellen und dann beurteilen, wie gut bestimmte Methoden funktionieren. Verwenden Sie den folgenden Code, um ein Trainings- und Testdatensatz zu erstellen.
 
 ```{r, message = FALSE, warning = FALSE}
-library(mlbench)
 set.seed(42)
 sim_trn = mlbench.spirals(n = 2500, cycles = 1.5, sd = 0.125)
 sim_trn = data.frame(sim_trn$x, class = as.factor(sim_trn$classes)) %>% tibble()
@@ -40,7 +52,7 @@ ggplot(sim_trn, aes(x=X1, y=X2, col=class))+geom_point()
 Bevor Sie fortfahren, stelle einen Seed ein, der deiner StudentenID entspricht.
 
 ```{r}
-uin = 1910837830
+uin = 1910897920
 set.seed(uin)
 ```
 
@@ -76,21 +88,20 @@ tree_cv_time = system.time({
     method = "rpart")
 })
 
-# Tidymodels (optional)
+sim_glm_cv_s <- predict(sim_glm_cv, sim_tst)
+results <- confusionMatrix(data=sim_glm_cv_s, reference=sim_tst$class)
+glmAccuracy <- results$overall["Accuracy"]
+cat("GLM", glmAccuracy)
 
-glm_cv_tidy = system.time({
-  # recipe
-  # train
-})
+print("---")
 
-tree_cv_tidy = system.time({
-  # recipe
-  # train
-})
-
+sim_tree_cv_s <- predict(sim_tree_cv, sim_tst)
+results <- confusionMatrix(data=sim_tree_cv_s, reference=sim_tst$class)
+treeAccuracy <- results$overall["Accuracy"]
+cat("TREE", treeAccuracy)
 ```
 
-Wir sehen, dass beide Methoden durch Cross-Validierung in ähnlicher Zeit optimiert werden.
+Wir sehen, dass beide Methoden durch Cross-Validierung in ähnlicher Zeit optimiert werden. Das "tree_cv_time" ist nur um ca. 100ms langsamer.
 
 ```{r}
 glm_cv_time["elapsed"]
@@ -106,14 +117,52 @@ Wiederholen Sie die obige Analyse mit einem Random Forest, zweimal. Verwenden Si
 
 ```{r}
 rf_grid = expand.grid(mtry = c(1, 2))
+
 rf_tidy = rand_forest(mtry=tune()) %>% 
   set_mode("classification") %>% 
   set_engine("randomForest")
 
 rf_ctrl <- control_grid()
 
-#rf_tidy %>% tune_grid()
+rf_cv_time = system.time({
+  sim_rf_cv = train(
+    class ~ .,
+    data = sim_trn,
+    trControl = cv_5,
+    tuneGrid = rf_grid)
+})
+
+
+oob = trainControl(method = "oob")
+rf_oob_time = system.time({
+  sim_rf_oob = train(
+    class ~ .,
+    data = sim_trn,
+    trControl = oob,
+    tuneGrid = rf_grid)
+})
+
 ```
+
+```{r}
+sim_rf_cv_s <- predict(sim_rf_cv, sim_tst)
+results <- confusionMatrix(data=sim_rf_cv_s, reference=sim_tst$class)
+cvAccuracy <- results$overall["Accuracy"]
+cat("CV", cvAccuracy)
+
+print("---")
+
+sim_rf_oob_s <- predict(sim_rf_oob, sim_tst)
+results <- confusionMatrix(data=sim_rf_oob_s, reference=sim_tst$class)
+obbAccuracy <- results$overall["Accuracy"]
+cat("OOB", obbAccuracy)
+```
+
+```{r}
+rf_cv_time["elapsed"]
+rf_oob_time["elapsed"]
+```
+
 
 Erstellen Sie eine Tabelle, in der die Ergebnisse dieser vier Modelle zusammengefasst sind. (Logistik mit CV, Baum mit CV, RF mit OOB, RF mit CV). Berichte:
 
@@ -123,7 +172,12 @@ Erstellen Sie eine Tabelle, in der die Ergebnisse dieser vier Modelle zusammenge
 - Testgenauigkeit
 
 ```{r}
-result_1 <- tribble(~model, ~parameter, ~training_time, ~resampled_accuracy, ~test_accuracy) # TODO fill the results (will be tested)
+result_1 <- tribble(~model, ~parameter, ~training_time, ~resampled_accuracy, ~test_accuracy,
+                    "Logistik mit CV", "none", as.double(glm_cv_time["elapsed"]), max(sim_glm_cv$results$Accuracy), as.double(glmAccuracy), 
+                    "Baum mit CV", "single decision tree", as.double(tree_cv_time["elapsed"]), max(sim_tree_cv$results$Accuracy), as.double(treeAccuracy), 
+                    "RF mit CV", "cross validation", as.double(rf_cv_time["elapsed"]), max(sim_rf_cv$results$Accuracy), as.double(cvAccuracy),  
+                    "RF mit OBB", "mtry", as.double(rf_oob_time["elapsed"]), max(sim_rf_oob$results$Accuracy), as.double(obbAccuracy)) 
+print(result_1)
 ```
 
 
@@ -140,7 +194,7 @@ Hitters = na.omit(Hitters)
 Nachdem du `uin` auf Ihre StudentID umgestellt hast, verwende den folgenden Code, um die Daten aufzuteilen.
 
 ```{r}
-uin = 123456789
+uin = 1910837830
 set.seed(uin)
 hit_split = initial_split(Hitters, p = 0.6, list = FALSE)
 hit_trn = hit_split %>% training()
@@ -172,7 +226,55 @@ Für jedes, Berichte:
 - Test RMSE
 
 ```{r}
-result_2 <- tribble(~model, ~train_rmse, ~test_rmse)
+#tuned boosted tree Model
+tuned_boosted_tree = train(Salary ~ ., data = hit_trn,
+                method = "gbm",
+                trControl = cv_5,
+                verbose = FALSE,
+                tuneGrid = gbm_grid)
+
+#Tuned Random Forest Model
+rf_grid = rf_grid = expand.grid(mtry = 1:(ncol(hit_trn) - 1))
+tuned_rf  = train(Salary ~ ., data = hit_trn,
+                method = "rf",
+                trControl = oob,
+                tuneGrid = rf_grid)
+
+#Bagged Tree
+bagged_tree = train(Salary ~ ., data = hit_trn,
+                method = "rf",
+                trControl = oob,
+                tuneGrid = data.frame(mtry = (ncol(hit_trn) - 1)))
+
+
+#Calc RMSE
+calc_rmse = function(actual, predicted) {
+  sqrt(mean((actual - predicted) ^ 2))
+}
+
+tbt_rmse_trn = calc_rmse(predicted = predict(tuned_boosted_tree, hit_trn),
+                         actual = hit_trn$Salary)
+
+rf_rmse_trn = calc_rmse(predicted = predict(tuned_rf, hit_trn),
+                        actual = hit_trn$Salary)
+
+bt_rmse_trn = calc_rmse(predicted = predict(bagged_tree, hit_trn),
+                        actual = hit_trn$Salary)
+
+tbt_rmse_tst = calc_rmse(predicted = predict(tuned_boosted_tree, hit_tst),
+                         actual= hit_tst$Salary)
+
+rf_rmse_tst = calc_rmse(predicted = predict(tuned_rf, hit_tst),
+                        actual = hit_tst$Salary)
+
+bt_rmse_tst = calc_rmse(predicted = predict(bagged_tree, hit_tst),
+                        actual = hit_tst$Salary)
+
+result_2 <- tribble(~model, ~train_rmse, ~test_rmse,
+                    "Tuned boosted tree Model", tbt_rmse_trn, tbt_rmse_tst,
+                    "Tuned random forest Model", rf_rmse_trn, rf_rmse_tst,
+                    "Bagged tree Model", bt_rmse_tst, bt_rmse_tst)
+result_2
 ```
 
 
@@ -182,11 +284,47 @@ result_2 <- tribble(~model, ~train_rmse, ~test_rmse)
 **[5 points]** Dann fahren wir mit den Daten aus Übung 2 fort. Das Buch, ISL, schlägt vor, die Response "Salary", log-transformieren, bevor es in einen Random Forest passt. Ist das notwendig? Tunen Sie einen Random Forest neu, wie Sie es in Übung 2 getan haben, außer mit einer logarithmisch transformierten Response. Berichten Sie den Test RMSE sowohl für das nicht transformierte als auch für das transformierte Modell im Originalmaßstab der Antwortvariablen. 
 
 ```{r, echo = FALSE}
-ggplot(hit_trn, aes(x=Salary))+geom_histogram(binwidth = 250)
+hit_trn_transformed <- hit_trn
+hit_trn_transformed$Salary <- log(hit_trn_transformed$Salary)
+
+hit_tst_transformed <- hit_tst
+hit_tst_transformed$Salary <- log(hit_tst_transformed$Salary)
+
+hist(hit_trn$Salary)
+hist(hit_trn_transformed$Salary)
+```
+Die Variable zu transformieren ist nicht "notwendig", jedoch verbessert es die Aussagekraft des Trees. Decision Trees sind unempfindlich gegenüber der Skala der Variablen, aber da es eine kleine Anzahl hoher Gehälter gibt, verbessert die Log-Transformation der "Salary" Variable die Vorhersage, da der Tree (und seine Loss-Function) nicht von den großen Werten beeinflusst werden.
+
+```{r rf transformed}
+rf_grid = expand.grid(mtry = 1:(ncol(hit_trn_transformed) - 1))
+
+transformed_rf  = train(Salary ~ ., data = hit_trn,
+                        method = "rf",
+                        trControl = oob,
+                        tuneGrid = rf_grid)
+
+transformed_rf_transformed  = train(Salary ~ ., data = hit_trn_transformed,
+                        method = "rf",
+                        trControl = oob,
+                        tuneGrid = rf_grid)
+
+#Calc RMSE
+rmse_rf_hit_tst = calc_rmse(predicted = predict(transformed_rf, hit_tst),
+                        actual = hit_tst$Salary)
+
+rmse_rf_hit_tst_transformed = calc_rmse(predicted = predict(transformed_rf_transformed, hit_tst_transformed),
+                         actual= hit_tst_transformed$Salary)
+
+
+transformed_rf
+
 ```
 
+
 ```{r}
-result_3 <- tribble(~model, ~test_rmse_base, ~test_rmse_log)
+result_3 <- tribble(~model, ~test_rmse_base, ~test_rmse_log, 
+                    "Log Transformed Random Forrest", rmse_rf_hit_tst, rmse_rf_hit_tst_transformed)
+result_3
 ```
 
 
@@ -194,29 +332,52 @@ result_3 <- tribble(~model, ~test_rmse_base, ~test_rmse_log)
 
 **[1 point each]** Beantworte die folgenden Fragen auf der Grundlage deiner Ergebnisse aus den drei Übungen. 
 
-### Timing
 
 **(a)** Vergleichen Sie die Zeit, die für die Abstimmung der einzelnen Modelle benötigt wird. Ist der Unterschied zwischen dem OOB- und dem CV-Ergebnis für den Random Forest ähnlich, wie Sie es erwartet hätten?
+Das OOB-Ergebnis ist deutlich schneller als die CV. Einerseits weil die Cross-Validation mehrmals über den Datensatz iteriert und zweitens, weil beide Funktionen unterschiedliche Defaults setzen wie sie die Daten bearbeiten (https://stats.stackexchange.com/questions/198839/evaluate-random-forest-oob-vs-cv/199201)
 
 **(b)** Vergleiche den getunten Wert von `mtry` für jeden der getunten Random Forests. Wählen sie das gleiche Modell?
+Für beide RFs wurde jeweils 1 als Wert für mtry verwendet. Sie wählen also somit das gleiche Modell.
 
 **(c)** Vergleichen Sie die Testgenauigkeit der vier betrachteten Verfahren. Erläutere diese Ergebnisse kurz.
+Die Genaugikeiten der vier Modelle unterscheiden sich stark voneinander. Die getunten Modelle haben eine deutlich bessere Accuracy. Die Accuracy der nicht-getunten und der getunten Modelle haben allerdings eine stark ähnliche Accuracy.
 
 ### Salary
 
 **(d)** Berichte den eingestellten Wert von `mtry` für den Random Forest.
+4
 
 **(e)** Erzeuge einen Plot, der die Tuningergebnisse für das Tuning des boosted tree model anzeigt.
+```{r}
+plot(tuned_boosted_tree)
+```
+
 
 **(f)** Erzeuge einen Plot der Variable Importance für den tuned Random Forest.
+```{r}
+plot(varImp(tuned_rf))
+```
+
 
 **(g)** Erzeuge einen Plot der Variable Importance für das tuned Boosted Tree Model.
+```{r}
+plot(varImp(tuned_boosted_tree))
+```
+
 
 **(h)** Nach dem Random Forest, was sind die drei wichtigsten Prädiktoren?
+```{r}
+names(importance(tuned_rf$finalModel)[order(importance(tuned_rf$finalModel), decreasing = TRUE), ][1:3])
+```
+
 
 **(i)** Nach dem Boosted Model, was sind die drei wichtigsten Prädiktoren?
+```{r}
+rownames(varImp(tuned_boosted_tree)$importance)[order(varImp(tuned_boosted_tree)$importance$Overall, decreasing = TRUE)][1:3]
+```
+
 
 ### Transformation
 
 **(j)** Basierend auf diesen Ergebnissen, glauben Sie, dass die Transformation notwendig war?
-
+Ja, die RMSE Ergebnisse zeigen, dass sich die Transformation sehr gelohnt hat. Der RMSE des transformierten Modells ist deutlich niedriger.

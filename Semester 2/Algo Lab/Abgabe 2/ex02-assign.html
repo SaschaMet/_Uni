@@ -1635,7 +1635,7 @@ summary {
 
 <h1 class="title toc-ignore">Übung 02</h1>
 <h4 class="author">Sascha Metzger - 1910837830 - DSIA Algorithmik &amp; Statistik, SS 2019</h4>
-<h4 class="date">2019-01-01 (updated: 2020-05-26)</h4>
+<h4 class="date">2019-01-01 (updated: 2020-06-09)</h4>
 
 </div>
 
@@ -1654,11 +1654,11 @@ summary {
 <pre><code>## Loading required package: ggplot2</code></pre>
 <pre class="r"><code>library(dplyr)</code></pre>
 <pre><code>## 
-## Attaching package: 'dplyr'</code></pre>
-<pre><code>## The following objects are masked from 'package:stats':
+## Attaching package: &#39;dplyr&#39;</code></pre>
+<pre><code>## The following objects are masked from &#39;package:stats&#39;:
 ## 
 ##     filter, lag</code></pre>
-<pre><code>## The following objects are masked from 'package:base':
+<pre><code>## The following objects are masked from &#39;package:base&#39;:
 ## 
 ##     intersect, setdiff, setequal, union</code></pre>
 <pre class="r"><code>wisc_trn = read.csv(&quot;wisc-trn.csv&quot;)
@@ -1707,7 +1707,7 @@ wisc_knn_pred</code></pre>
 ##                                           
 ##                   Kappa : 0.6957          
 ##                                           
-##  Mcnemar's Test P-Value : 0.01616         
+##  Mcnemar&#39;s Test P-Value : 0.01616         
 ##                                           
 ##             Sensitivity : 0.9667          
 ##             Specificity : 0.7000          
@@ -1718,7 +1718,7 @@ wisc_knn_pred</code></pre>
 ##    Detection Prevalence : 0.7000          
 ##       Balanced Accuracy : 0.8333          
 ##                                           
-##        'Positive' Class : B               
+##        &#39;Positive&#39; Class : B               
 ## </code></pre>
 <hr />
 </div>
@@ -1756,7 +1756,7 @@ wisc_knn_tuned_pred</code></pre>
 ##                                           
 ##                   Kappa : 0.766           
 ##                                           
-##  Mcnemar's Test P-Value : 0.2278          
+##  Mcnemar&#39;s Test P-Value : 0.2278          
 ##                                           
 ##             Sensitivity : 0.9500          
 ##             Specificity : 0.8000          
@@ -1767,7 +1767,7 @@ wisc_knn_tuned_pred</code></pre>
 ##    Detection Prevalence : 0.6500          
 ##       Balanced Accuracy : 0.8750          
 ##                                           
-##        'Positive' Class : B               
+##        &#39;Positive&#39; Class : B               
 ## </code></pre>
 <hr />
 </div>
@@ -1820,7 +1820,7 @@ wisc_conf_matrix_rf</code></pre>
 ##                                           
 ##                   Kappa : 0.8536          
 ##                                           
-##  Mcnemar's Test P-Value : 1               
+##  Mcnemar&#39;s Test P-Value : 1               
 ##                                           
 ##             Sensitivity : 0.9500          
 ##             Specificity : 0.9000          
@@ -1831,7 +1831,7 @@ wisc_conf_matrix_rf</code></pre>
 ##    Detection Prevalence : 0.6100          
 ##       Balanced Accuracy : 0.9250          
 ##                                           
-##        'Positive' Class : B               
+##        &#39;Positive&#39; Class : B               
 ## </code></pre>
 <pre class="r"><code>wisc_conf_matrix_rf</code></pre>
 <pre><code>## Confusion Matrix and Statistics
@@ -1848,7 +1848,7 @@ wisc_conf_matrix_rf</code></pre>
 ##                                           
 ##                   Kappa : 0.8536          
 ##                                           
-##  Mcnemar's Test P-Value : 1               
+##  Mcnemar&#39;s Test P-Value : 1               
 ##                                           
 ##             Sensitivity : 0.9500          
 ##             Specificity : 0.9000          
@@ -1859,7 +1859,7 @@ wisc_conf_matrix_rf</code></pre>
 ##    Detection Prevalence : 0.6100          
 ##       Balanced Accuracy : 0.9250          
 ##                                           
-##        'Positive' Class : B               
+##        &#39;Positive&#39; Class : B               
 ## </code></pre>
 <hr />
 </div>
@@ -1880,14 +1880,89 @@ wisc_conf_matrix_rf</code></pre>
 <p><strong>(l)</strong> Basierend auf den Ergebnissen, ist das Random Forest- oder das KNN-Model von besserer Performance?</p>
 <pre class="r"><code>print(&quot;Accuracy Tuned KNN&quot;)</code></pre>
 <pre><code>## [1] &quot;Accuracy Tuned KNN&quot;</code></pre>
-<pre class="r"><code>wisc_knn_tuned_pred$overall['Accuracy']</code></pre>
+<pre class="r"><code>wisc_knn_tuned_pred$overall[&#39;Accuracy&#39;]</code></pre>
 <pre><code>## Accuracy 
 ##     0.89</code></pre>
 <pre class="r"><code>print(&quot;Accuracy RF&quot;)</code></pre>
 <pre><code>## [1] &quot;Accuracy RF&quot;</code></pre>
-<pre class="r"><code>wisc_conf_matrix_rf$overall['Accuracy']</code></pre>
+<pre class="r"><code>wisc_conf_matrix_rf$overall[&#39;Accuracy&#39;]</code></pre>
 <pre><code>## Accuracy 
 ##     0.93</code></pre>
+<pre class="r"><code>a = wisc_knn_sorted$k[1]
+b = wisc_knn_sorted$Accuracy[1]
+c = wisc_knn_pred$overall[&#39;Accuracy&#39;] 
+d = wisc_knn_tuned_sorted$k[1]
+e = wisc_knn_tuned_sorted$Accuracy[1]
+f = wisc_knn_tuned_pred$overall[&#39;Accuracy&#39;]
+g = &quot;mit&quot; # &quot;mit&quot; &quot;ohne&quot;
+h = wisc_rf_sorted$mtry[1]
+i = wisc_rf_prob$B[10]
+j = wisc_conf_matrix_rf$byClass[&quot;Sensitivity&quot;]
+k = wisc_conf_matrix_rf$byClass[&quot;Specificity&quot;]
+l = &quot;Random Forest&quot; # &quot;mit&quot; &quot;ohne&quot;</code></pre>
+<pre class="r"><code>results = data.frame(
+  part = LETTERS[1:12],
+  answer = c(a,b,c,d,e,f,g,h,i,j,k,l)
+)
+knitr::kable(results)</code></pre>
+<table>
+<thead>
+<tr class="header">
+<th align="left">part</th>
+<th align="left">answer</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">A</td>
+<td align="left">14</td>
+</tr>
+<tr class="even">
+<td align="left">B</td>
+<td align="left">0.901935483870968</td>
+</tr>
+<tr class="odd">
+<td align="left">C</td>
+<td align="left">0.86</td>
+</tr>
+<tr class="even">
+<td align="left">D</td>
+<td align="left">4</td>
+</tr>
+<tr class="odd">
+<td align="left">E</td>
+<td align="left">0.957306168647425</td>
+</tr>
+<tr class="even">
+<td align="left">F</td>
+<td align="left">0.89</td>
+</tr>
+<tr class="odd">
+<td align="left">G</td>
+<td align="left">mit</td>
+</tr>
+<tr class="even">
+<td align="left">H</td>
+<td align="left">8</td>
+</tr>
+<tr class="odd">
+<td align="left">I</td>
+<td align="left">0.856</td>
+</tr>
+<tr class="even">
+<td align="left">J</td>
+<td align="left">0.95</td>
+</tr>
+<tr class="odd">
+<td align="left">K</td>
+<td align="left">0.9</td>
+</tr>
+<tr class="even">
+<td align="left">L</td>
+<td align="left">Random Forest</td>
+</tr>
+</tbody>
+</table>
 </div>
 
 

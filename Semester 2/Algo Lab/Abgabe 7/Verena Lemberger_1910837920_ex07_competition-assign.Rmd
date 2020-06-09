@@ -1,0 +1,295 @@
+---
+title: "Übung 07"
+author: "Verena Lemberger - 1910837920"
+course: "DSIA Algorithmik & Statistik, SS 2020"
+date: 'Bis: Sonntag, 14.06.2020'
+output:
+  html_document:
+    df_print: paged
+urlcolor: cyan
+---
+
+Bitte um Beachtung der [Übungs-Policy](https://algo2-lab.netlify.com/%C3%BCbungs-policy.html) für genaue Anweisungen und einige Beurteilungsnotizen. Fehler bei der Einhaltung ergeben Punktabzug.
+
+Die Competition Anweisungen findest du auf WebLearn.
+
+Die Einreichung erfolgt unter: [Leaderboard](https://g4challenge.shinyapps.io/shiny-leaderboard/)
+
+Dieses Template soll bei der Erstellung der Einreichung helfen.
+
+Für die volle Punktzahl dokumentiere:
+
+- deine EDA
+- dein Training 
+- deine Schritte
+- deine Ergebnisse (Screenshot vom Online-Tool)
+- Diskussion der Ergebnisse (Speed vs. Long Run) - Strategien gegen Overfitting...
+
+
+```{r, warning = FALSE, message = FALSE}
+# suggested packages
+pacman::p_load(
+MASS,
+tidymodels, caret
+tidyverse,
+knitr,
+kableExtra,
+mlbench,
+ISLR,
+ellipse,
+randomForest,
+gbm,
+glmnet,
+rpart,
+rpart.plot,
+klaR,
+gam,
+e1071)
+# feel free to use additional packages
+```
+
+***
+
+# Setup
+```{r libraries, message = FALSE, warning = FALSE}
+library(dplyr)
+library(ISLR)
+library(caret)
+library(e1071)
+library(tidyverse)
+library(tidymodels)
+library(readr)
+library(factoextra)
+library(ggfortify)
+library(ggplot2)
+library(GGally)
+library(fpc)
+library(car)
+```
+
+
+# Klassifikation [10 Punkte]
+
+```{r, message = FALSE, warning = FALSE, eval=F}
+class_trn = read_csv("class-trn.csv")
+class_tst = read_csv("class-tst.csv")
+```
+
+
+```{r}
+glimpse(class_trn)
+head(class_tst)
+```
+
+```{r}
+
+set.seed(1910897920)
+
+#set train control for 5-fold Cross Validation:
+ctrl <- trainControl(
+        method = "repeatedcv", 
+        number = 10,
+        repeats = 5,
+        verboseIter = TRUE
+        )
+
+
+# use accuracy from caret confusionmatrix or calculate yourself
+
+```
+
+```{r}
+# classification task
+# place code here that trains the model used to submit your best result
+#train model
+class_rf <- train(y ~ ., 
+                  data = class_trn, 
+                  method = "rf", 
+                  trControl = ctrl,
+                  preProcess = c("center",
+                                 "scale"))
+
+class_rf
+
+
+#plot 
+
+plot(class_rf)
+# only supply code needed to train that model
+```
+
+```{r, eval = FALSE}
+# place code here that stores the test predictions that you submitted
+class_pred = predict(class_rf, newdata = class_tst)
+head(class_pred)
+# use this variable
+
+#accuracy: 
+confusionMatrix(class_rf)
+```
+
+```{r eval=F}
+class_pred <- predict(class_rf, class_tst)
+#class_pred <- write.table(class_pred, file="class_pred.csv",col.names = c("Y"),sep = ",",row.names = F)
+tibble(Y=class_pred) %>% write.csv("class_pred.csv")
+
+
+```
+
+***
+
+# Regression [10 Punkte]
+
+
+```{r, message = FALSE, warning = FALSE, eval=F}
+reg_trn = read_csv("reg-trn.csv")
+reg_tst = read_csv("reg-tst.csv")
+```
+
+```{r}
+glimpse(reg_trn)
+head(reg_trn)
+glimpse(reg_tst)
+head(reg_tst)
+```
+
+
+```{r}
+rmse = function(actual, predicted) {
+  sqrt(mean((actual - predicted) ^ 2))
+}
+```
+
+```{r}
+# regression task
+ctrl <- trainControl(
+        method = "cv", 
+        number = 5,
+        repeats = 3,
+        verboseIter = TRUE
+        )
+
+grid <- expand.grid(size=c(5,10,20,50), k=c(1,2,3,4,5))
+# train the model
+
+# place code here that trains the model used to submit your best result
+reg_knn <- train(y ~ ., 
+                 data = reg_trn, 
+                 method = "knn", 
+                 trControl = ctrl,
+                 preProcess = c("center",
+                                "scale"
+                                ),
+                 tuneLength = 20
+                 )
+
+reg_knn
+# only supply code needed to train that model
+
+reg_glm <- train(y ~ ., 
+                 data = reg_trn, 
+                 method = "glm", 
+                 trControl = ctrl,
+                 preProcess = c("center"),
+                 tuneGrid=grid
+                 )
+
+reg_glm
+
+
+reg_lm <- lm(y ~ ., 
+             data = reg_trn)
+
+reg_lm
+```
+
+```{r, eval = FALSE}
+# place code here that stores the test predictions that you submitted
+reg_pred = predict(reg_lm, newdata = reg_tst)
+head(reg_pred)
+
+
+reg_tst$Y = reg_pred
+reg_tst
+
+#as.numeric(reg_tst)
+#rmse(reg_trn, reg_pred)
+```
+
+
+```{r eval=F}
+tibble(Y=reg_pred) %>% write.csv("reg_pred.csv")
+
+```
+
+***
+
+# Spam Filter [10 Punkte]
+
+```{r, message = FALSE, warning = FALSE, eval=F}
+spam_trn = read_csv("spam-trn.csv")
+spam_tst = read_csv("spam-tst.csv")
+```
+
+```{r}
+glimpse(spam_trn)
+head(spam_trn)
+```
+
+
+```{r}
+score = function(actual, predicted) {
+  1   * sum(predicted == "spam" & actual == "spam") +
+  -25 * sum(predicted == "spam" & actual == "nonspam") +
+  -1  * sum(predicted == "nonspam" & actual == "spam") +
+  2   * sum(predicted == "nonspam" & actual == "nonspam")
+}
+```
+
+```{r}
+# spam task
+# place code here that trains the model used to submit your best result
+trctrl <- trainControl(method = "repeatedcv", number = 5)
+
+
+svm_linear <- train(type ~., data = spam_trn, 
+                    method = "svmLinear", 
+                    trControl = trctrl, 
+                    preProcess = c("center", "scale"))
+
+svm_linear
+
+
+spam_rf <- train(type ~ ., 
+                 data = spam_trn, 
+                 method="rf", 
+                 #trControl=trctrl,
+                 preProcess = c("center"))
+
+
+```
+
+```{r, eval = FALSE}
+# place code here that stores the test predictions that you submitted
+spam_pred = predict(spam_rf, spam_tst)
+spam_pred
+
+spam_tst$Y = spam_pred
+
+score(spam_tst, spam_pred)
+```
+
+***
+
+# Abgabe
+
+## Erstellung der Abgabe CSV-Datei
+
+```{r eval=F}
+spam_pred <- predict(spam_rf, spam_tst)
+tibble(Y=spam_pred) %>% write.csv("spam_pred.csv")
+```
+
+
+https://g4challenge.shinyapps.io/shiny-leaderboard/
+

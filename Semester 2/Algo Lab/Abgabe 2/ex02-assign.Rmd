@@ -157,8 +157,7 @@ print("Accuracy RF")
 wisc_conf_matrix_rf$overall['Accuracy']
 ```
 
-
-```{r, echo = FALSE, eval = FALSE}
+```{r}
 a = wisc_knn_sorted$k[1]
 b = wisc_knn_sorted$Accuracy[1]
 c = wisc_knn_pred$overall['Accuracy'] 
@@ -171,13 +170,13 @@ i = wisc_rf_prob$B[10]
 j = wisc_conf_matrix_rf$byClass["Sensitivity"]
 k = wisc_conf_matrix_rf$byClass["Specificity"]
 l = "Random Forest" # "mit" "ohne"
+```
 
+```{r}
 results = data.frame(
   part = LETTERS[1:12],
   answer = c(a,b,c,d,e,f,g,h,i,j,k,l)
 )
-
 knitr::kable(results)
 ```
-
 

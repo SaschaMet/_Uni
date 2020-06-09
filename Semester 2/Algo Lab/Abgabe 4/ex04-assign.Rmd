@@ -30,6 +30,7 @@ library(ggfortify)
 library(ggplot2)
 library(GGally)
 library(fpc)
+library(dendextend)
 ```
 
 
@@ -42,7 +43,7 @@ library(fpc)
 uin = 1910837830
 set.seed(uin)
 
-glimpse(OJ)
+head(OJ)
 
 oj_split = initial_split(OJ, p = 0.5)
 oj_trn = oj_split %>% training()
@@ -66,8 +67,7 @@ svm <- train(Purchase ~., data = oj_trn,
 svm_lin_pred <- predict(svm, oj_trn)
 svm_lin_acc <- postResample(predict(svm, oj_tst), oj_tst$Purchase)
 
-summary(svm)
-svm_lin_acc
+svm_lin_acc["Accuracy"]
 ```
 
 
@@ -80,9 +80,7 @@ svm_poly_1 <- train(Purchase ~ ., data = oj_trn,
                     preProcess = c("center", "scale"))
 
 svm_poly_1_acc <- postResample(predict(svm_poly_1, oj_tst), oj_tst$Purchase)
-
-summary(svm_poly_1)
-svm_poly_1_acc
+svm_poly_1_acc["Accuracy"]
 ```
 
 **(c)** Stimmen Sie ein SVM mit Radialkernel mit 5-facher Cross-Validierung auf die Trainingsdaten ab. Verwenden Sie das folgende Wertgitter für `C` und `sigma`. Berichten Sie die gewählten Werte aller Tuningparameter. Berichten Sie über die Genauigkeit der Testdaten. 
@@ -90,16 +88,12 @@ svm_poly_1_acc
 ```{r}
 rad_grid = expand.grid(C = c(2 ^ (-2:3)), sigma  = c(2 ^ (-3:1)))
 
-svm_radial <- train(Purchase ~ ., data = oj_trn,
-                    method = "svmRadial",
-                    trControl = trctrl,
+svm_radial <- svm(Purchase ~. , data=oj_trn, kernel="radial",  trControl = trctrl,
                     preProcess = c("center", "scale"),
-                    tuneGrid = rad_grid)
+                    tuneGrid = rad_grid )
 
 svm_radial_acc <- postResample(predict(svm_radial, oj_tst), oj_tst$Purchase)
-
-summary(svm_radial)
-svm_radial_acc
+svm_radial_acc["Accuracy"]
 ```
 
 
@@ -113,23 +107,22 @@ rf <- train(Purchase ~ ., data = oj_trn,
             preProcess = c("center", "scale"))
 
 rf_acc <- postResample(predict(rf, oj_tst), oj_tst$Purchase)
-
-summary(rf)
-rf_acc
+rf_acc["Accuracy"]
 ```
 
 **(e)** Fassen Sie die obigen Genauigkeiten zusammen. Welche Methode hat am besten funktioniert? Warum?
 
 ```{r}
 summary_results <- tribble(~model, ~method, ~accuracy,
-                           "SVM linear", "svmLinear", 0.8168224, 
-                           "SVM polynomial", "scmLinear2", 0.8186916,
-                           "SVM radial", "svmRadial", 0.7981308, 
-                           "Random Forest", "rf", 0.7906542)
+                           "SVM linear", "svmLinear", as.double(svm_lin_acc["Accuracy"]), 
+                           "SVM polynomial", "scmLinear2", as.double(svm_poly_1_acc["Accuracy"]),
+                           "SVM radial", "svmRadial", as.double(svm_radial_acc["Accuracy"]), 
+                           "Random Forest", "rf", as.double(rf_acc["Accuracy"]))
 
 summary_results
 ```
 
+Das SVM radial Model hat am besten abgeschnitten, dicht gefolgt von den anderen beiden SVM Modellen. Das radial-Model hat am besten abgeschnitten, da die Variable "Purchase" mit einer solchen Methode besser vorherzusagen ist.
 
 # Aufgabe 2
 
@@ -162,7 +155,7 @@ Es sollten vier Cluster verwendet werden.
 
 ```{r}
 clusters <- kmeans(df, centers = 4, nstart = 10)
-clusters
+clusters$size
 clusters$tot.withinss
 ```
 Es gibt vier Cluster mit jeweils 25 Beobachtungen. Der tot-withinns Wert liegt bei 4844.926.
@@ -173,13 +166,12 @@ Es gibt vier Cluster mit jeweils 25 Beobachtungen. Der tot-withinns Wert liegt b
 plotcluster(df[1:2], clusters$cluster)
 ```
 
-Auf den ersten Blick scheinen die Cluster ziemlich verteilt und nicht besonders gut gewählt. Vor allem die Cluster 1 und 4 scheinen nicht besonders gut geteilt zu sein. Die Cluster zwei und drei hingegen lassen sich großteils besser unterscheiden. Auf Grundlage dieses Plots würde ich meine Entscheidung über die vier Cluster noch einmal überdenken.
+Auf den ersten Blick sind die Cluster nicht besonders gut zu unterscheiden Um eine deutlichere Unterscheidung der Cluster zu bekommen, müssten mehrere Parameter mit einbezogen werden.
 
 **(d)** Verwenden Sie PCA, um diese Daten zu visualisieren. Plotten Sie die Daten mit den ersten beiden Hauptkomponenten und färben Sie die Punkte entsprechend dem $k$-means Clustering. Basierend auf diesem Plot, denken Sie, dass Sie eine gute Wahl für die Anzahl der Zentren getroffen haben? (Kurze Erklärung.)
 
 ```{r, message=F}
 cluster_pca1 <- fviz_cluster(clusters, data = df)
-
 cluster_pca1
 ```
 Die Auswahl der 4 Clusterist ist sehr gut getroffen, da diese sehr gut ersichtlich und somit erklärbar sind. 
@@ -187,10 +179,13 @@ Die Auswahl der 4 Clusterist ist sehr gut getroffen, da diese sehr gut ersichtli
 **(e)** Berechnen Sie den Anteil der Variation, der durch die Hauptkomponenten erklärt wird. Machen Sie eine Darstellung des kumulierten Anteils erklärt. Wie viele Hauptkomponenten sind notwendig, um 95% der Variation der Daten zu erklären?
 
 ```{r}
+cluster_pca <- prcomp(df[], center = TRUE, scale. = TRUE)
 pca_var <- cluster_pca$sdev^2
 pve_var <- pca_var / sum(pca_var)
 cum_pve <- cumsum(pve_var)
 pve_table <- tibble(comp = seq(1:ncol(df)), pve_var, cum_pve)
+
+summary(cluster_pca)
 
 ggplot(pve_table, aes(x = comp, y = cum_pve)) + 
   geom_point() + 
@@ -282,7 +277,8 @@ plot(cut_complete_unscaled)
 
 **(b)** Basierend auf den obigen Plots, erscheint eines der Ergebnisse nützlicher als die anderen? (Es gibt hier keine richtige Antwort.) Wählen Sie Ihren Favoriten. (Nochmals, keine richtige Antwort.)
 
-Die Methode des "complete clusterings" scheint mir am sinnvollsten zu sein, insbesondere mit den skalierten Daten.Hier lassen sich nicht nur gute Ableitungen herleiten, sondern es lassen sich auch die einzelnen (echten) Cluster gut erkennen, wordurch eine gute Vergleichbarkeit gegeben ist.
+Die Methode des "complete clusterings" scheint mir am sinnvollsten zu sein, insbesondere mit den skalierten Daten. Hier lassen sich nicht nur gute Ableitungen herleiten, sondern es lassen sich auch die einzelnen (echten) Cluster gut erkennen, wordurch eine gute Vergleichbarkeit gegeben ist.
+
 
 **(c)** Verwenden Sie die Dokumentation zu `?hclust`, um weitere mögliche Verknüpfungen zu finden. Such dir einen aus und probiere ihn aus. Vergleichen Sie die Ergebnisse mit Ihren Favoriten von **(b)**. Ist es anders?
 
