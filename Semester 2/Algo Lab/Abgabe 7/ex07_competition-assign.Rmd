@@ -1,7 +1,7 @@
 ---
 title: "Übung 07"
-author: "DSIA Algorithmik & Statistik, SS 2020"
-date: 'Bis: Sonntag, 14.06.2020'
+author: "Sascha Metzger - 1910837830 - DSIA Algorithmik & Statistik, SS 2019"
+date: '2019-01-01 (updated: `r Sys.Date()`)'
 output:
   html_document:
     df_print: paged
@@ -25,57 +25,68 @@ Für die volle Punktzahl dokumentiere:
 - Diskussion der Ergebnisse (Speed vs. Long Run) - Strategien gegen Overfitting...
 
 
-```{r, warning = FALSE, message = FALSE}
-# suggested packages
-pacman::p_load(
-MASS,
-tidymodels,#caret
-tidyverse,
-knitr,
-kableExtra,
-mlbench,
-ISLR,
-ellipse,
-randomForest,
-gbm,
-glmnet,
-rpart,
-rpart.plot,
-klaR,
-gam,
-e1071)
-# feel free to use additional packages
+```{r libraries, message = FALSE, warning = FALSE}
+library(dplyr)
+library(ISLR)
+library(caret)
+library(e1071)
+library(tidyverse)
+library(tidymodels)
+library(readr)
+library(factoextra)
+library(ggfortify)
+library(ggplot2)
+library(GGally)
+library(fpc)
+library(car)
+```
+***
+
+```{r}
+set.seed(1910837830)
 ```
 
-***
 
 # Klassifikation [10 Punkte]
 
-```{r, message = FALSE, warning = FALSE, eval=F}
+```{r, message = FALSE, warning = FALSE}
 class_trn = read_csv("class-trn.csv")
 class_tst = read_csv("class-tst.csv")
 ```
 
 ```{r}
-# use accuracy from caret confusionmatrix or calculate yourself
+#set train control for 5-fold Cross Validation:
+ctrl <- trainControl(
+        method = "repeatedcv", 
+        number = 10,
+        repeats = 5,
+        )
 ```
 
-```{r}
+```{r, message=F, warning=F}
 # classification task
 # place code here that trains the model used to submit your best result
 # only supply code needed to train that model
+class_rf <- train(y ~ ., 
+                  data = class_trn, 
+                  method = "rf", 
+                  trControl = ctrl,
+                  preProcess = c("center","scale"))
+class_rf
+plot(class_rf)
 ```
 
-```{r, eval = FALSE}
+```{r}
 # place code here that stores the test predictions that you submitted
-class_pred = # use this variable
+class_pred = predict(class_rf, newdata = class_tst)
+head(class_pred)
+confusionMatrix(class_rf)
 ```
-
 ***
 
 # Regression [10 Punkte]
 
-```{r, message = FALSE, warning = FALSE, eval=F}
+```{r, message = FALSE, warning = FALSE}
 reg_trn = read_csv("reg-trn.csv")
 reg_tst = read_csv("reg-tst.csv")
 ```
@@ -87,23 +98,33 @@ rmse = function(actual, predicted) {
 ```
 
 ```{r}
-# regression task
-# place code here that trains the model used to submit your best result
-# only supply code needed to train that model
+head(reg_trn)
 ```
 
-```{r, eval = FALSE}
-# place code here that stores the test predictions that you submitted
-reg_pred = # use this variable
+```{r, message = FALSE, warning = FALSE}
+reg_lm <- lm(y ~ ., data = reg_trn)
+reg_lm
+```
+
+```{r}
+reg_pred = predict(reg_lm, newdata = reg_tst)
+reg_tst$Y = reg_pred
+reg_tst
+tibble(Y=reg_pred) %>% write.csv("reg_pred.csv")
 ```
 
 ***
 
 # Spam Filter [10 Punkte]
 
-```{r, message = FALSE, warning = FALSE, eval=F}
+```{r, message = FALSE, warning = FALSE}
 spam_trn = read_csv("spam-trn.csv")
 spam_tst = read_csv("spam-tst.csv")
+```
+
+```{r}
+glimpse(spam_trn)
+head(spam_trn)
 ```
 
 ```{r}
@@ -116,14 +137,19 @@ score = function(actual, predicted) {
 ```
 
 ```{r}
-# spam task
-# place code here that trains the model used to submit your best result
-# only supply code needed to train that model
+trctrl <- trainControl(method = "repeatedcv", number = 5)
+svm <- train(type ~., data = spam_trn, 
+                    method = "svmRadial", 
+                    trControl = trctrl, 
+                    preProcess = c("center", "scale"))
+
+svm
 ```
 
-```{r, eval = FALSE}
-# place code here that stores the test predictions that you submitted
-spam_pred = # use this variable
+```{r}
+spam_pred = predict(svm, spam_tst)
+spam_tst$Y = spam_pred
+score(spam_tst, spam_pred)
 ```
 
 ***
@@ -132,10 +158,9 @@ spam_pred = # use this variable
 
 ## Erstellung der Abgabe CSV-Datei
 
-```{r eval=F}
-spam_pred <- predict(your_best_model, spam_tst)
+```{r}
+spam_pred <- predict(svm, spam_tst)
 spam_pred %>% write.csv("spam_pred.csv")
-
 ```
 
 
