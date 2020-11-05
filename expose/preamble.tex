@@ -5,7 +5,6 @@
 \usepackage{graphicx}
 \usepackage[utf8]{inputenc}
 \usepackage{blindtext}  % Used for dummy text segments
-\usepackage{natbib}
 \usepackage{hyperref}
 \usepackage{booktabs}
 \usepackage{xcolor}
@@ -28,32 +27,35 @@
 \usepackage{titlesec}
 \titleformat{\chapter}{\bf \LARGE}{\thechapter.}{16pt}{\LARGE}
 
-\bibliographystyle{apalike}
+\usepackage[german]{babel}
+
+\usepackage{natbib}
+\bibliographystyle{customnat}
 \pagestyle{headings}
 \setlength{\parindent}{0em}
 \setlength{\parskip}{1.5em}
-\renewcommand{\baselinestretch}{1.13}  
+\renewcommand{\baselinestretch}{1.13}
 
 \lstset{
-    numberstyle=\tiny,
-    numbers=left,
-    showstringspaces=false,
-    breaklines=true,
-    commentstyle=\itshape\color{darkgray},
-    basicstyle=\ttfamily,
-    stringstyle=\color{orange},
-    keywordstyle=\bf\color{green!40!black},
-    identifierstyle=\color{blue}
+	numberstyle=\tiny,
+	numbers=left,
+	showstringspaces=false,
+	breaklines=true,
+	commentstyle=\itshape\color{darkgray},
+	basicstyle=\ttfamily,
+	stringstyle=\color{orange},
+	keywordstyle=\bf\color{green!40!black},
+	identifierstyle=\color{blue}
 }
 
 \hypersetup{
-  pdftitle    = \mytitle,
-  pdfsubject  = \worktype,
-  pdfauthor   = \myname,
-  pdfcreator  = {pdflatex using template provided by University of Applied Sciences FH Kufstein Tirol},
-  bookmarksnumbered = true,
-  colorlinks = true,
-  linkcolor = blue,
-  citecolor = green,
-  urlcolor = orange
+	pdftitle    = \mytitle,
+	pdfsubject  = \worktype,
+	pdfauthor   = \myname,
+	pdfcreator  = {pdflatex using template provided by University of Applied Sciences FH Kufstein Tirol},
+	bookmarksnumbered = true,
+	colorlinks = true,
+	linkcolor = blue,
+	citecolor = green,
+	urlcolor = orange
 }
