@@ -19,16 +19,20 @@
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 
-
 \usepackage[a4paper, left=3.5cm, right=3cm, top=3.5cm, bottom=3cm]{geometry}
 \setlength{\headheight}{15pt}
-
 
 \usepackage{titlesec}
 \titleformat{\chapter}{\bf \LARGE}{\thechapter.}{16pt}{\LARGE}
 
+% Line breaks for urls
+\usepackage{url}
+\def\UrlBreaks{\do\/\do-}
+
+% German language support
 \usepackage[german]{babel}
 
+% Bib package and styles
 \usepackage{natbib}
 \bibliographystyle{customnat}
 \pagestyle{headings}
@@ -43,7 +47,7 @@
 	breaklines=true,
 	commentstyle=\itshape\color{darkgray},
 	basicstyle=\ttfamily,
-	stringstyle=\color{orange},
+	stringstyle=\color{darkgray},
 	keywordstyle=\bf\color{green!40!black},
 	identifierstyle=\color{blue}
 }
@@ -56,6 +60,6 @@
 	bookmarksnumbered = true,
 	colorlinks = true,
 	linkcolor = blue,
-	citecolor = green,
-	urlcolor = orange
+	citecolor = gray,
+	urlcolor = gray
 }
