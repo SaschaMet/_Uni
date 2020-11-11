@@ -1,0 +1,9 @@
+tensorflow
+matplotlib
+ipykernel
+jupyterlab
+numpy==1.18
+pandas
+keras
+seaborn
+scikit-image

@@ -2,4 +2,5 @@ __pycache__
 .DS_Store
 Data Engineering/1. Semester/Block 2/MongoDB/node_modules/
 Semester 2/Machine Learning/Workshop 3/images/
-.DS_Store
+Semester 3/Big Data Processing/data/*
+Semester 3/Big Data Processing/.devcontainer/*
