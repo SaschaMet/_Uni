@@ -7,15 +7,13 @@ An End-To-End Project from Data Preparation to Model Deployment
 - A Scaleway Account: https://console.scaleway.com/register
 - Scaleway CLI: https://www.scaleway.com/en/docs/manage-cloud-servers-with-scaleway-cli/
 - Configured SSH Key: https://www.scaleway.com/en/docs/configure-new-ssh-key/
+- Optional: Configure s3cmd for file uploading https://www.scaleway.com/en/docs/object-storage-with-s3cmd/
 
 
 traing the model with: python -m model.model.py
 
 
 ## Todo:
--[] Den data/images ordner filtern sodass nur die bilder aus dem df verbleiben
--[] Das gefilterte dataset auf S3 hochladen
-
 -[x] Get csv with metadata
 -[x] Create pipeline
 -[x] Store the csv under /data

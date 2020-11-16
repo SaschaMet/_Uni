@@ -1,0 +1,7 @@
+matplotlib
+ipykernel
+jupyterlab
+numpy==1.18
+pandas
+seaborn
+scikit-image
