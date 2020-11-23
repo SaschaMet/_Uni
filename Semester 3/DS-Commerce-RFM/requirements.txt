@@ -1,0 +1,8 @@
+numpy==1.18
+pandas
+sklearn
+ipykernel
+
+
+xgboost
+matplotlib
