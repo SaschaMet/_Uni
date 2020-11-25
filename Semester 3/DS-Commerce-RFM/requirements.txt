@@ -1,8 +1,6 @@
-numpy==1.18
+numpy
 pandas
 sklearn
 ipykernel
-
-
-xgboost
+seaborn
 matplotlib
