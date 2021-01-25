@@ -1,0 +1,2317 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Rechnungen>
+  <Rechnung>
+    <Jahr>2019</Jahr>
+    <Nummer>1</Nummer>
+    <Datum>2019-01-07</Datum>
+    <Kunde_Id>62</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="95" Menge="5" />
+      <Position Artikel_ID="90" Menge="4" />
+      <Position Artikel_ID="80" Menge="10" />
+      <Position Artikel_ID="68" Menge="8" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2019</Jahr>
+    <Nummer>2</Nummer>
+    <Datum>2019-01-07</Datum>
+    <Kunde_Id>333</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="99" Menge="6" />
+      <Position Artikel_ID="47" Menge="2" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2019</Jahr>
+    <Nummer>3</Nummer>
+    <Datum>2019-01-07</Datum>
+    <Kunde_Id>909</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="95" Menge="8" />
+      <Position Artikel_ID="63" Menge="3" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2019</Jahr>
+    <Nummer>4</Nummer>
+    <Datum>2019-01-08</Datum>
+    <Kunde_Id>993</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="53" Menge="5" />
+      <Position Artikel_ID="99" Menge="5" />
+      <Position Artikel_ID="12" Menge="1" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2019</Jahr>
+    <Nummer>5</Nummer>
+    <Datum>2019-01-10</Datum>
+    <Kunde_Id>846</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="2" Menge="8" />
+      <Position Artikel_ID="6" Menge="8" />
+      <Position Artikel_ID="76" Menge="2" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2019</Jahr>
+    <Nummer>6</Nummer>
+    <Datum>2019-01-11</Datum>
+    <Kunde_Id>516</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="96" Menge="3" />
+      <Position Artikel_ID="66" Menge="4" />
+      <Position Artikel_ID="4" Menge="8" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2019</Jahr>
+    <Nummer>7</Nummer>
+    <Datum>2019-01-12</Datum>
+    <Kunde_Id>182</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="20" Menge="1" />
+      <Position Artikel_ID="83" Menge="1" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2019</Jahr>
+    <Nummer>8</Nummer>
+    <Datum>2019-01-14</Datum>
+    <Kunde_Id>973</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="74" Menge="1" />
+      <Position Artikel_ID="28" Menge="3" />
+      <Position Artikel_ID="2" Menge="5" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2019</Jahr>
+    <Nummer>9</Nummer>
+    <Datum>2019-01-15</Datum>
+    <Kunde_Id>980</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="63" Menge="7" />
+      <Position Artikel_ID="22" Menge="9" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2019</Jahr>
+    <Nummer>10</Nummer>
+    <Datum>2019-01-17</Datum>
+    <Kunde_Id>660</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="67" Menge="9" />
+      <Position Artikel_ID="78" Menge="10" />
+      <Position Artikel_ID="17" Menge="1" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2019</Jahr>
+    <Nummer>11</Nummer>
+    <Datum>2019-01-17</Datum>
+    <Kunde_Id>564</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="23" Menge="5" />
+      <Position Artikel_ID="88" Menge="6" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2019</Jahr>
+    <Nummer>12</Nummer>
+    <Datum>2019-01-17</Datum>
+    <Kunde_Id>728</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="29" Menge="5" />
+      <Position Artikel_ID="44" Menge="7" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2019</Jahr>
+    <Nummer>13</Nummer>
+    <Datum>2019-01-18</Datum>
+    <Kunde_Id>3</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="29" Menge="2" />
+      <Position Artikel_ID="73" Menge="9" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2019</Jahr>
+    <Nummer>14</Nummer>
+    <Datum>2019-01-20</Datum>
+    <Kunde_Id>435</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="98" Menge="10" />
+      <Position Artikel_ID="74" Menge="6" />
+      <Position Artikel_ID="82" Menge="4" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2019</Jahr>
+    <Nummer>15</Nummer>
+    <Datum>2019-01-20</Datum>
+    <Kunde_Id>99</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="24" Menge="2" />
+      <Position Artikel_ID="54" Menge="10" />
+      <Position Artikel_ID="86" Menge="6" />
+      <Position Artikel_ID="8" Menge="8" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2019</Jahr>
+    <Nummer>16</Nummer>
+    <Datum>2019-01-20</Datum>
+    <Kunde_Id>417</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="43" Menge="2" />
+      <Position Artikel_ID="26" Menge="7" />
+      <Position Artikel_ID="34" Menge="10" />
+      <Position Artikel_ID="93" Menge="9" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2019</Jahr>
+    <Nummer>17</Nummer>
+    <Datum>2019-01-20</Datum>
+    <Kunde_Id>981</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="7" Menge="7" />
+      <Position Artikel_ID="54" Menge="6" />
+      <Position Artikel_ID="5" Menge="8" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2019</Jahr>
+    <Nummer>18</Nummer>
+    <Datum>2019-01-22</Datum>
+    <Kunde_Id>332</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="12" Menge="5" />
+      <Position Artikel_ID="58" Menge="3" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2019</Jahr>
+    <Nummer>19</Nummer>
+    <Datum>2019-01-24</Datum>
+    <Kunde_Id>432</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="60" Menge="9" />
+      <Position Artikel_ID="90" Menge="1" />
+      <Position Artikel_ID="54" Menge="2" />
+      <Position Artikel_ID="98" Menge="5" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2019</Jahr>
+    <Nummer>20</Nummer>
+    <Datum>2019-01-26</Datum>
+    <Kunde_Id>132</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="87" Menge="1" />
+      <Position Artikel_ID="17" Menge="7" />
+      <Position Artikel_ID="46" Menge="3" />
+      <Position Artikel_ID="52" Menge="2" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2019</Jahr>
+    <Nummer>21</Nummer>
+    <Datum>2019-01-28</Datum>
+    <Kunde_Id>866</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="10" Menge="9" />
+      <Position Artikel_ID="68" Menge="2" />
+      <Position Artikel_ID="2" Menge="1" />
+      <Position Artikel_ID="81" Menge="6" />
+      <Position Artikel_ID="28" Menge="6" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2019</Jahr>
+    <Nummer>22</Nummer>
+    <Datum>2019-01-30</Datum>
+    <Kunde_Id>288</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="27" Menge="4" />
+      <Position Artikel_ID="17" Menge="1" />
+      <Position Artikel_ID="10" Menge="4" />
+      <Position Artikel_ID="56" Menge="9" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2019</Jahr>
+    <Nummer>23</Nummer>
+    <Datum>2019-01-30</Datum>
+    <Kunde_Id>470</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="59" Menge="4" />
+      <Position Artikel_ID="37" Menge="3" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2019</Jahr>
+    <Nummer>24</Nummer>
+    <Datum>2019-02-01</Datum>
+    <Kunde_Id>90</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="57" Menge="10" />
+      <Position Artikel_ID="55" Menge="3" />
+      <Position Artikel_ID="37" Menge="2" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2019</Jahr>
+    <Nummer>25</Nummer>
+    <Datum>2019-02-03</Datum>
+    <Kunde_Id>551</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="29" Menge="1" />
+      <Position Artikel_ID="51" Menge="6" />
+      <Position Artikel_ID="77" Menge="3" />
+      <Position Artikel_ID="27" Menge="1" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2019</Jahr>
+    <Nummer>26</Nummer>
+    <Datum>2019-02-04</Datum>
+    <Kunde_Id>142</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="23" Menge="9" />
+      <Position Artikel_ID="32" Menge="1" />
+      <Position Artikel_ID="11" Menge="5" />
+      <Position Artikel_ID="31" Menge="10" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2019</Jahr>
+    <Nummer>27</Nummer>
+    <Datum>2019-02-06</Datum>
+    <Kunde_Id>818</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="91" Menge="9" />
+      <Position Artikel_ID="32" Menge="10" />
+      <Position Artikel_ID="95" Menge="9" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2019</Jahr>
+    <Nummer>28</Nummer>
+    <Datum>2019-02-08</Datum>
+    <Kunde_Id>498</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="16" Menge="7" />
+      <Position Artikel_ID="96" Menge="3" />
+      <Position Artikel_ID="23" Menge="1" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2019</Jahr>
+    <Nummer>29</Nummer>
+    <Datum>2019-02-10</Datum>
+    <Kunde_Id>746</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="56" Menge="3" />
+      <Position Artikel_ID="11" Menge="1" />
+      <Position Artikel_ID="34" Menge="10" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2019</Jahr>
+    <Nummer>30</Nummer>
+    <Datum>2019-02-10</Datum>
+    <Kunde_Id>938</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="69" Menge="10" />
+      <Position Artikel_ID="25" Menge="2" />
+      <Position Artikel_ID="39" Menge="6" />
+      <Position Artikel_ID="61" Menge="9" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2019</Jahr>
+    <Nummer>31</Nummer>
+    <Datum>2019-02-12</Datum>
+    <Kunde_Id>939</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="55" Menge="4" />
+      <Position Artikel_ID="37" Menge="1" />
+      <Position Artikel_ID="75" Menge="1" />
+      <Position Artikel_ID="74" Menge="10" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2019</Jahr>
+    <Nummer>32</Nummer>
+    <Datum>2019-02-14</Datum>
+    <Kunde_Id>304</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="88" Menge="2" />
+      <Position Artikel_ID="33" Menge="8" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2019</Jahr>
+    <Nummer>33</Nummer>
+    <Datum>2019-02-15</Datum>
+    <Kunde_Id>946</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="76" Menge="6" />
+      <Position Artikel_ID="40" Menge="2" />
+      <Position Artikel_ID="64" Menge="9" />
+      <Position Artikel_ID="44" Menge="9" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2019</Jahr>
+    <Nummer>34</Nummer>
+    <Datum>2019-02-15</Datum>
+    <Kunde_Id>664</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="29" Menge="5" />
+      <Position Artikel_ID="1" Menge="7" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2019</Jahr>
+    <Nummer>35</Nummer>
+    <Datum>2019-02-17</Datum>
+    <Kunde_Id>160</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="89" Menge="4" />
+      <Position Artikel_ID="45" Menge="1" />
+      <Position Artikel_ID="80" Menge="8" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2019</Jahr>
+    <Nummer>36</Nummer>
+    <Datum>2019-02-18</Datum>
+    <Kunde_Id>168</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="51" Menge="8" />
+      <Position Artikel_ID="76" Menge="6" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2019</Jahr>
+    <Nummer>37</Nummer>
+    <Datum>2019-02-20</Datum>
+    <Kunde_Id>565</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="43" Menge="9" />
+      <Position Artikel_ID="58" Menge="6" />
+      <Position Artikel_ID="66" Menge="10" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2019</Jahr>
+    <Nummer>38</Nummer>
+    <Datum>2019-02-21</Datum>
+    <Kunde_Id>347</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="43" Menge="2" />
+      <Position Artikel_ID="16" Menge="6" />
+      <Position Artikel_ID="23" Menge="8" />
+      <Position Artikel_ID="45" Menge="3" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2019</Jahr>
+    <Nummer>39</Nummer>
+    <Datum>2019-02-23</Datum>
+    <Kunde_Id>150</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="51" Menge="1" />
+      <Position Artikel_ID="91" Menge="7" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2019</Jahr>
+    <Nummer>40</Nummer>
+    <Datum>2019-02-23</Datum>
+    <Kunde_Id>960</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="24" Menge="2" />
+      <Position Artikel_ID="21" Menge="10" />
+      <Position Artikel_ID="61" Menge="3" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2019</Jahr>
+    <Nummer>41</Nummer>
+    <Datum>2019-02-23</Datum>
+    <Kunde_Id>841</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="18" Menge="3" />
+      <Position Artikel_ID="98" Menge="2" />
+      <Position Artikel_ID="14" Menge="4" />
+      <Position Artikel_ID="6" Menge="10" />
+      <Position Artikel_ID="52" Menge="1" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2019</Jahr>
+    <Nummer>42</Nummer>
+    <Datum>2019-02-25</Datum>
+    <Kunde_Id>35</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="4" Menge="10" />
+      <Position Artikel_ID="9" Menge="8" />
+      <Position Artikel_ID="51" Menge="8" />
+      <Position Artikel_ID="6" Menge="1" />
+      <Position Artikel_ID="40" Menge="5" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2019</Jahr>
+    <Nummer>43</Nummer>
+    <Datum>2019-02-26</Datum>
+    <Kunde_Id>50</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="3" Menge="10" />
+      <Position Artikel_ID="24" Menge="5" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2019</Jahr>
+    <Nummer>44</Nummer>
+    <Datum>2019-02-27</Datum>
+    <Kunde_Id>372</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="4" Menge="5" />
+      <Position Artikel_ID="99" Menge="6" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2019</Jahr>
+    <Nummer>45</Nummer>
+    <Datum>2019-02-27</Datum>
+    <Kunde_Id>825</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="34" Menge="7" />
+      <Position Artikel_ID="23" Menge="3" />
+      <Position Artikel_ID="12" Menge="6" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2019</Jahr>
+    <Nummer>46</Nummer>
+    <Datum>2019-03-01</Datum>
+    <Kunde_Id>96</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="11" Menge="10" />
+      <Position Artikel_ID="4" Menge="8" />
+      <Position Artikel_ID="99" Menge="7" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2019</Jahr>
+    <Nummer>47</Nummer>
+    <Datum>2019-03-03</Datum>
+    <Kunde_Id>520</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="27" Menge="10" />
+      <Position Artikel_ID="39" Menge="4" />
+      <Position Artikel_ID="59" Menge="2" />
+      <Position Artikel_ID="41" Menge="4" />
+      <Position Artikel_ID="98" Menge="8" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2019</Jahr>
+    <Nummer>48</Nummer>
+    <Datum>2019-03-04</Datum>
+    <Kunde_Id>640</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="17" Menge="2" />
+      <Position Artikel_ID="6" Menge="9" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2019</Jahr>
+    <Nummer>49</Nummer>
+    <Datum>2019-03-04</Datum>
+    <Kunde_Id>497</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="2" Menge="6" />
+      <Position Artikel_ID="35" Menge="7" />
+      <Position Artikel_ID="17" Menge="7" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2019</Jahr>
+    <Nummer>50</Nummer>
+    <Datum>2019-03-04</Datum>
+    <Kunde_Id>504</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="27" Menge="6" />
+      <Position Artikel_ID="26" Menge="8" />
+      <Position Artikel_ID="3" Menge="2" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2019</Jahr>
+    <Nummer>51</Nummer>
+    <Datum>2019-03-06</Datum>
+    <Kunde_Id>329</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="57" Menge="9" />
+      <Position Artikel_ID="37" Menge="7" />
+      <Position Artikel_ID="46" Menge="6" />
+      <Position Artikel_ID="88" Menge="3" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2019</Jahr>
+    <Nummer>52</Nummer>
+    <Datum>2019-03-08</Datum>
+    <Kunde_Id>482</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="83" Menge="1" />
+      <Position Artikel_ID="89" Menge="1" />
+      <Position Artikel_ID="52" Menge="5" />
+      <Position Artikel_ID="88" Menge="6" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2019</Jahr>
+    <Nummer>53</Nummer>
+    <Datum>2019-03-08</Datum>
+    <Kunde_Id>133</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="64" Menge="2" />
+      <Position Artikel_ID="28" Menge="7" />
+      <Position Artikel_ID="81" Menge="9" />
+      <Position Artikel_ID="59" Menge="5" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2019</Jahr>
+    <Nummer>54</Nummer>
+    <Datum>2019-03-09</Datum>
+    <Kunde_Id>550</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="22" Menge="4" />
+      <Position Artikel_ID="41" Menge="10" />
+      <Position Artikel_ID="44" Menge="2" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2019</Jahr>
+    <Nummer>55</Nummer>
+    <Datum>2019-03-11</Datum>
+    <Kunde_Id>284</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="36" Menge="1" />
+      <Position Artikel_ID="87" Menge="10" />
+      <Position Artikel_ID="14" Menge="5" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2019</Jahr>
+    <Nummer>56</Nummer>
+    <Datum>2019-03-11</Datum>
+    <Kunde_Id>133</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="97" Menge="9" />
+      <Position Artikel_ID="92" Menge="5" />
+      <Position Artikel_ID="89" Menge="2" />
+      <Position Artikel_ID="60" Menge="3" />
+      <Position Artikel_ID="75" Menge="8" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2019</Jahr>
+    <Nummer>57</Nummer>
+    <Datum>2019-03-11</Datum>
+    <Kunde_Id>288</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="45" Menge="6" />
+      <Position Artikel_ID="77" Menge="2" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2019</Jahr>
+    <Nummer>58</Nummer>
+    <Datum>2019-03-13</Datum>
+    <Kunde_Id>497</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="46" Menge="2" />
+      <Position Artikel_ID="74" Menge="1" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2019</Jahr>
+    <Nummer>59</Nummer>
+    <Datum>2019-03-15</Datum>
+    <Kunde_Id>274</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="59" Menge="5" />
+      <Position Artikel_ID="28" Menge="3" />
+      <Position Artikel_ID="96" Menge="4" />
+      <Position Artikel_ID="63" Menge="1" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2019</Jahr>
+    <Nummer>60</Nummer>
+    <Datum>2019-03-16</Datum>
+    <Kunde_Id>746</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="78" Menge="1" />
+      <Position Artikel_ID="87" Menge="2" />
+      <Position Artikel_ID="21" Menge="10" />
+      <Position Artikel_ID="48" Menge="5" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2019</Jahr>
+    <Nummer>61</Nummer>
+    <Datum>2019-03-17</Datum>
+    <Kunde_Id>907</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="37" Menge="7" />
+      <Position Artikel_ID="98" Menge="7" />
+      <Position Artikel_ID="51" Menge="5" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2019</Jahr>
+    <Nummer>62</Nummer>
+    <Datum>2019-03-17</Datum>
+    <Kunde_Id>994</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="38" Menge="9" />
+      <Position Artikel_ID="12" Menge="2" />
+      <Position Artikel_ID="40" Menge="1" />
+      <Position Artikel_ID="16" Menge="10" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2019</Jahr>
+    <Nummer>63</Nummer>
+    <Datum>2019-03-19</Datum>
+    <Kunde_Id>769</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="88" Menge="7" />
+      <Position Artikel_ID="22" Menge="1" />
+      <Position Artikel_ID="60" Menge="9" />
+      <Position Artikel_ID="25" Menge="9" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2019</Jahr>
+    <Nummer>64</Nummer>
+    <Datum>2019-03-19</Datum>
+    <Kunde_Id>8</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="16" Menge="8" />
+      <Position Artikel_ID="62" Menge="9" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2019</Jahr>
+    <Nummer>65</Nummer>
+    <Datum>2019-03-20</Datum>
+    <Kunde_Id>195</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="36" Menge="8" />
+      <Position Artikel_ID="17" Menge="8" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2019</Jahr>
+    <Nummer>66</Nummer>
+    <Datum>2019-03-22</Datum>
+    <Kunde_Id>32</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="11" Menge="7" />
+      <Position Artikel_ID="80" Menge="5" />
+      <Position Artikel_ID="53" Menge="9" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2019</Jahr>
+    <Nummer>67</Nummer>
+    <Datum>2019-03-23</Datum>
+    <Kunde_Id>53</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="28" Menge="7" />
+      <Position Artikel_ID="46" Menge="10" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2019</Jahr>
+    <Nummer>68</Nummer>
+    <Datum>2019-03-23</Datum>
+    <Kunde_Id>482</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="8" Menge="5" />
+      <Position Artikel_ID="60" Menge="7" />
+      <Position Artikel_ID="61" Menge="6" />
+      <Position Artikel_ID="85" Menge="4" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2019</Jahr>
+    <Nummer>69</Nummer>
+    <Datum>2019-03-23</Datum>
+    <Kunde_Id>556</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="73" Menge="7" />
+      <Position Artikel_ID="63" Menge="6" />
+      <Position Artikel_ID="1" Menge="7" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2019</Jahr>
+    <Nummer>70</Nummer>
+    <Datum>2019-03-25</Datum>
+    <Kunde_Id>316</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="26" Menge="8" />
+      <Position Artikel_ID="90" Menge="5" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2019</Jahr>
+    <Nummer>71</Nummer>
+    <Datum>2019-03-25</Datum>
+    <Kunde_Id>421</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="94" Menge="7" />
+      <Position Artikel_ID="89" Menge="6" />
+      <Position Artikel_ID="67" Menge="2" />
+      <Position Artikel_ID="45" Menge="5" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2019</Jahr>
+    <Nummer>72</Nummer>
+    <Datum>2019-03-26</Datum>
+    <Kunde_Id>988</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="45" Menge="5" />
+      <Position Artikel_ID="25" Menge="2" />
+      <Position Artikel_ID="91" Menge="4" />
+      <Position Artikel_ID="13" Menge="8" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2019</Jahr>
+    <Nummer>73</Nummer>
+    <Datum>2019-03-28</Datum>
+    <Kunde_Id>813</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="45" Menge="8" />
+      <Position Artikel_ID="98" Menge="1" />
+      <Position Artikel_ID="50" Menge="9" />
+      <Position Artikel_ID="43" Menge="8" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2019</Jahr>
+    <Nummer>74</Nummer>
+    <Datum>2019-03-28</Datum>
+    <Kunde_Id>704</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="34" Menge="9" />
+      <Position Artikel_ID="83" Menge="3" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2019</Jahr>
+    <Nummer>75</Nummer>
+    <Datum>2019-03-30</Datum>
+    <Kunde_Id>574</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="15" Menge="4" />
+      <Position Artikel_ID="97" Menge="2" />
+      <Position Artikel_ID="75" Menge="6" />
+      <Position Artikel_ID="63" Menge="8" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2019</Jahr>
+    <Nummer>76</Nummer>
+    <Datum>2019-04-01</Datum>
+    <Kunde_Id>149</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="55" Menge="8" />
+      <Position Artikel_ID="67" Menge="6" />
+      <Position Artikel_ID="82" Menge="2" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2019</Jahr>
+    <Nummer>77</Nummer>
+    <Datum>2019-04-03</Datum>
+    <Kunde_Id>276</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="42" Menge="1" />
+      <Position Artikel_ID="26" Menge="10" />
+      <Position Artikel_ID="12" Menge="8" />
+      <Position Artikel_ID="29" Menge="2" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2019</Jahr>
+    <Nummer>78</Nummer>
+    <Datum>2019-04-05</Datum>
+    <Kunde_Id>580</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="75" Menge="3" />
+      <Position Artikel_ID="85" Menge="9" />
+      <Position Artikel_ID="99" Menge="2" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2019</Jahr>
+    <Nummer>79</Nummer>
+    <Datum>2019-04-06</Datum>
+    <Kunde_Id>593</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="60" Menge="10" />
+      <Position Artikel_ID="90" Menge="9" />
+      <Position Artikel_ID="54" Menge="2" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2019</Jahr>
+    <Nummer>80</Nummer>
+    <Datum>2019-04-08</Datum>
+    <Kunde_Id>496</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="83" Menge="5" />
+      <Position Artikel_ID="18" Menge="3" />
+      <Position Artikel_ID="16" Menge="3" />
+      <Position Artikel_ID="88" Menge="5" />
+      <Position Artikel_ID="84" Menge="10" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2019</Jahr>
+    <Nummer>81</Nummer>
+    <Datum>2019-04-09</Datum>
+    <Kunde_Id>659</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="56" Menge="9" />
+      <Position Artikel_ID="29" Menge="1" />
+      <Position Artikel_ID="39" Menge="8" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2019</Jahr>
+    <Nummer>82</Nummer>
+    <Datum>2019-04-11</Datum>
+    <Kunde_Id>656</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="99" Menge="2" />
+      <Position Artikel_ID="57" Menge="8" />
+      <Position Artikel_ID="34" Menge="8" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2019</Jahr>
+    <Nummer>83</Nummer>
+    <Datum>2019-04-11</Datum>
+    <Kunde_Id>192</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="90" Menge="1" />
+      <Position Artikel_ID="45" Menge="7" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2019</Jahr>
+    <Nummer>84</Nummer>
+    <Datum>2019-04-11</Datum>
+    <Kunde_Id>211</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="72" Menge="2" />
+      <Position Artikel_ID="59" Menge="9" />
+      <Position Artikel_ID="2" Menge="7" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2019</Jahr>
+    <Nummer>85</Nummer>
+    <Datum>2019-04-11</Datum>
+    <Kunde_Id>184</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="28" Menge="6" />
+      <Position Artikel_ID="32" Menge="1" />
+      <Position Artikel_ID="16" Menge="2" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2019</Jahr>
+    <Nummer>86</Nummer>
+    <Datum>2019-04-13</Datum>
+    <Kunde_Id>688</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="24" Menge="7" />
+      <Position Artikel_ID="30" Menge="5" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2019</Jahr>
+    <Nummer>87</Nummer>
+    <Datum>2019-04-15</Datum>
+    <Kunde_Id>795</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="47" Menge="3" />
+      <Position Artikel_ID="84" Menge="4" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2019</Jahr>
+    <Nummer>88</Nummer>
+    <Datum>2019-04-15</Datum>
+    <Kunde_Id>428</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="35" Menge="3" />
+      <Position Artikel_ID="93" Menge="9" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2019</Jahr>
+    <Nummer>89</Nummer>
+    <Datum>2019-04-16</Datum>
+    <Kunde_Id>348</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="94" Menge="9" />
+      <Position Artikel_ID="51" Menge="7" />
+      <Position Artikel_ID="64" Menge="9" />
+      <Position Artikel_ID="53" Menge="4" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2019</Jahr>
+    <Nummer>90</Nummer>
+    <Datum>2019-04-16</Datum>
+    <Kunde_Id>488</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="58" Menge="7" />
+      <Position Artikel_ID="16" Menge="4" />
+      <Position Artikel_ID="28" Menge="8" />
+      <Position Artikel_ID="4" Menge="8" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2019</Jahr>
+    <Nummer>91</Nummer>
+    <Datum>2019-04-17</Datum>
+    <Kunde_Id>902</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="66" Menge="4" />
+      <Position Artikel_ID="59" Menge="4" />
+      <Position Artikel_ID="18" Menge="1" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2019</Jahr>
+    <Nummer>92</Nummer>
+    <Datum>2019-04-18</Datum>
+    <Kunde_Id>254</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="95" Menge="9" />
+      <Position Artikel_ID="67" Menge="8" />
+      <Position Artikel_ID="80" Menge="4" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2019</Jahr>
+    <Nummer>93</Nummer>
+    <Datum>2019-04-19</Datum>
+    <Kunde_Id>634</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="51" Menge="7" />
+      <Position Artikel_ID="59" Menge="5" />
+      <Position Artikel_ID="93" Menge="8" />
+      <Position Artikel_ID="1" Menge="6" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2019</Jahr>
+    <Nummer>94</Nummer>
+    <Datum>2019-04-20</Datum>
+    <Kunde_Id>179</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="77" Menge="5" />
+      <Position Artikel_ID="68" Menge="3" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2019</Jahr>
+    <Nummer>95</Nummer>
+    <Datum>2019-04-21</Datum>
+    <Kunde_Id>539</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="81" Menge="8" />
+      <Position Artikel_ID="17" Menge="1" />
+      <Position Artikel_ID="97" Menge="3" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2019</Jahr>
+    <Nummer>96</Nummer>
+    <Datum>2019-04-23</Datum>
+    <Kunde_Id>821</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="79" Menge="7" />
+      <Position Artikel_ID="23" Menge="9" />
+      <Position Artikel_ID="99" Menge="2" />
+      <Position Artikel_ID="35" Menge="7" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2019</Jahr>
+    <Nummer>97</Nummer>
+    <Datum>2019-04-25</Datum>
+    <Kunde_Id>362</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="47" Menge="5" />
+      <Position Artikel_ID="21" Menge="8" />
+      <Position Artikel_ID="16" Menge="6" />
+      <Position Artikel_ID="91" Menge="8" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2019</Jahr>
+    <Nummer>98</Nummer>
+    <Datum>2019-04-27</Datum>
+    <Kunde_Id>544</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="98" Menge="10" />
+      <Position Artikel_ID="3" Menge="5" />
+      <Position Artikel_ID="33" Menge="7" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2019</Jahr>
+    <Nummer>99</Nummer>
+    <Datum>2019-04-28</Datum>
+    <Kunde_Id>208</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="45" Menge="3" />
+      <Position Artikel_ID="6" Menge="4" />
+      <Position Artikel_ID="9" Menge="9" />
+      <Position Artikel_ID="79" Menge="3" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2019</Jahr>
+    <Nummer>100</Nummer>
+    <Datum>2019-04-30</Datum>
+    <Kunde_Id>44</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="30" Menge="8" />
+      <Position Artikel_ID="44" Menge="5" />
+      <Position Artikel_ID="88" Menge="3" />
+      <Position Artikel_ID="48" Menge="7" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2019</Jahr>
+    <Nummer>101</Nummer>
+    <Datum>2019-04-30</Datum>
+    <Kunde_Id>95</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="72" Menge="1" />
+      <Position Artikel_ID="64" Menge="5" />
+      <Position Artikel_ID="98" Menge="2" />
+      <Position Artikel_ID="39" Menge="4" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2019</Jahr>
+    <Nummer>102</Nummer>
+    <Datum>2019-04-30</Datum>
+    <Kunde_Id>77</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="38" Menge="1" />
+      <Position Artikel_ID="75" Menge="2" />
+      <Position Artikel_ID="11" Menge="8" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2019</Jahr>
+    <Nummer>103</Nummer>
+    <Datum>2019-05-02</Datum>
+    <Kunde_Id>104</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="95" Menge="8" />
+      <Position Artikel_ID="63" Menge="6" />
+      <Position Artikel_ID="15" Menge="6" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2019</Jahr>
+    <Nummer>104</Nummer>
+    <Datum>2019-05-04</Datum>
+    <Kunde_Id>562</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="61" Menge="1" />
+      <Position Artikel_ID="74" Menge="2" />
+      <Position Artikel_ID="27" Menge="6" />
+      <Position Artikel_ID="97" Menge="8" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2019</Jahr>
+    <Nummer>105</Nummer>
+    <Datum>2019-05-06</Datum>
+    <Kunde_Id>565</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="26" Menge="4" />
+      <Position Artikel_ID="9" Menge="9" />
+      <Position Artikel_ID="61" Menge="7" />
+      <Position Artikel_ID="54" Menge="8" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2020</Jahr>
+    <Nummer>1</Nummer>
+    <Datum>2020-01-08</Datum>
+    <Kunde_Id>219</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="50" Menge="4" />
+      <Position Artikel_ID="37" Menge="7" />
+      <Position Artikel_ID="75" Menge="7" />
+      <Position Artikel_ID="20" Menge="9" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2020</Jahr>
+    <Nummer>2</Nummer>
+    <Datum>2020-01-08</Datum>
+    <Kunde_Id>205</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="19" Menge="1" />
+      <Position Artikel_ID="15" Menge="8" />
+      <Position Artikel_ID="73" Menge="5" />
+      <Position Artikel_ID="23" Menge="6" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2020</Jahr>
+    <Nummer>3</Nummer>
+    <Datum>2020-01-10</Datum>
+    <Kunde_Id>613</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="28" Menge="5" />
+      <Position Artikel_ID="35" Menge="9" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2020</Jahr>
+    <Nummer>4</Nummer>
+    <Datum>2020-01-12</Datum>
+    <Kunde_Id>29</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="99" Menge="7" />
+      <Position Artikel_ID="57" Menge="3" />
+      <Position Artikel_ID="66" Menge="9" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2020</Jahr>
+    <Nummer>5</Nummer>
+    <Datum>2020-01-12</Datum>
+    <Kunde_Id>301</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="70" Menge="7" />
+      <Position Artikel_ID="65" Menge="5" />
+      <Position Artikel_ID="8" Menge="5" />
+      <Position Artikel_ID="52" Menge="9" />
+      <Position Artikel_ID="75" Menge="10" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2020</Jahr>
+    <Nummer>6</Nummer>
+    <Datum>2020-01-13</Datum>
+    <Kunde_Id>930</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="40" Menge="3" />
+      <Position Artikel_ID="5" Menge="7" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2020</Jahr>
+    <Nummer>7</Nummer>
+    <Datum>2020-01-13</Datum>
+    <Kunde_Id>197</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="57" Menge="7" />
+      <Position Artikel_ID="97" Menge="3" />
+      <Position Artikel_ID="69" Menge="3" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2020</Jahr>
+    <Nummer>8</Nummer>
+    <Datum>2020-01-15</Datum>
+    <Kunde_Id>593</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="12" Menge="2" />
+      <Position Artikel_ID="79" Menge="6" />
+      <Position Artikel_ID="93" Menge="6" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2020</Jahr>
+    <Nummer>9</Nummer>
+    <Datum>2020-01-17</Datum>
+    <Kunde_Id>879</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="89" Menge="7" />
+      <Position Artikel_ID="49" Menge="5" />
+      <Position Artikel_ID="7" Menge="1" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2020</Jahr>
+    <Nummer>10</Nummer>
+    <Datum>2020-01-19</Datum>
+    <Kunde_Id>389</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="56" Menge="1" />
+      <Position Artikel_ID="80" Menge="3" />
+      <Position Artikel_ID="73" Menge="3" />
+      <Position Artikel_ID="89" Menge="7" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2020</Jahr>
+    <Nummer>11</Nummer>
+    <Datum>2020-01-19</Datum>
+    <Kunde_Id>876</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="36" Menge="1" />
+      <Position Artikel_ID="9" Menge="3" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2020</Jahr>
+    <Nummer>12</Nummer>
+    <Datum>2020-01-21</Datum>
+    <Kunde_Id>52</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="94" Menge="9" />
+      <Position Artikel_ID="93" Menge="10" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2020</Jahr>
+    <Nummer>13</Nummer>
+    <Datum>2020-01-22</Datum>
+    <Kunde_Id>898</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="36" Menge="7" />
+      <Position Artikel_ID="76" Menge="3" />
+      <Position Artikel_ID="35" Menge="2" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2020</Jahr>
+    <Nummer>14</Nummer>
+    <Datum>2020-01-23</Datum>
+    <Kunde_Id>872</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="82" Menge="2" />
+      <Position Artikel_ID="26" Menge="1" />
+      <Position Artikel_ID="81" Menge="10" />
+      <Position Artikel_ID="56" Menge="2" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2020</Jahr>
+    <Nummer>15</Nummer>
+    <Datum>2020-01-25</Datum>
+    <Kunde_Id>623</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="36" Menge="4" />
+      <Position Artikel_ID="24" Menge="10" />
+      <Position Artikel_ID="23" Menge="10" />
+      <Position Artikel_ID="27" Menge="4" />
+      <Position Artikel_ID="75" Menge="7" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2020</Jahr>
+    <Nummer>16</Nummer>
+    <Datum>2020-01-27</Datum>
+    <Kunde_Id>45</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="75" Menge="3" />
+      <Position Artikel_ID="96" Menge="10" />
+      <Position Artikel_ID="49" Menge="9" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2020</Jahr>
+    <Nummer>17</Nummer>
+    <Datum>2020-01-28</Datum>
+    <Kunde_Id>992</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="62" Menge="8" />
+      <Position Artikel_ID="52" Menge="9" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2020</Jahr>
+    <Nummer>18</Nummer>
+    <Datum>2020-01-30</Datum>
+    <Kunde_Id>200</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="75" Menge="9" />
+      <Position Artikel_ID="92" Menge="2" />
+      <Position Artikel_ID="74" Menge="5" />
+      <Position Artikel_ID="1" Menge="2" />
+      <Position Artikel_ID="12" Menge="6" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2020</Jahr>
+    <Nummer>19</Nummer>
+    <Datum>2020-01-31</Datum>
+    <Kunde_Id>804</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="16" Menge="9" />
+      <Position Artikel_ID="92" Menge="3" />
+      <Position Artikel_ID="1" Menge="9" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2020</Jahr>
+    <Nummer>20</Nummer>
+    <Datum>2020-02-02</Datum>
+    <Kunde_Id>547</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="79" Menge="5" />
+      <Position Artikel_ID="14" Menge="5" />
+      <Position Artikel_ID="32" Menge="10" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2020</Jahr>
+    <Nummer>21</Nummer>
+    <Datum>2020-02-03</Datum>
+    <Kunde_Id>32</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="64" Menge="7" />
+      <Position Artikel_ID="11" Menge="7" />
+      <Position Artikel_ID="53" Menge="3" />
+      <Position Artikel_ID="93" Menge="8" />
+      <Position Artikel_ID="28" Menge="7" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2020</Jahr>
+    <Nummer>22</Nummer>
+    <Datum>2020-02-05</Datum>
+    <Kunde_Id>953</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="13" Menge="9" />
+      <Position Artikel_ID="65" Menge="6" />
+      <Position Artikel_ID="80" Menge="8" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2020</Jahr>
+    <Nummer>23</Nummer>
+    <Datum>2020-02-05</Datum>
+    <Kunde_Id>187</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="59" Menge="4" />
+      <Position Artikel_ID="38" Menge="8" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2020</Jahr>
+    <Nummer>24</Nummer>
+    <Datum>2020-02-06</Datum>
+    <Kunde_Id>148</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="99" Menge="6" />
+      <Position Artikel_ID="24" Menge="2" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2020</Jahr>
+    <Nummer>25</Nummer>
+    <Datum>2020-02-08</Datum>
+    <Kunde_Id>926</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="69" Menge="3" />
+      <Position Artikel_ID="47" Menge="10" />
+      <Position Artikel_ID="83" Menge="9" />
+      <Position Artikel_ID="38" Menge="4" />
+      <Position Artikel_ID="61" Menge="6" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2020</Jahr>
+    <Nummer>26</Nummer>
+    <Datum>2020-02-10</Datum>
+    <Kunde_Id>127</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="26" Menge="6" />
+      <Position Artikel_ID="77" Menge="8" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2020</Jahr>
+    <Nummer>27</Nummer>
+    <Datum>2020-02-10</Datum>
+    <Kunde_Id>404</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="61" Menge="1" />
+      <Position Artikel_ID="93" Menge="5" />
+      <Position Artikel_ID="38" Menge="3" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2020</Jahr>
+    <Nummer>28</Nummer>
+    <Datum>2020-02-11</Datum>
+    <Kunde_Id>358</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="10" Menge="10" />
+      <Position Artikel_ID="3" Menge="10" />
+      <Position Artikel_ID="92" Menge="2" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2020</Jahr>
+    <Nummer>29</Nummer>
+    <Datum>2020-02-12</Datum>
+    <Kunde_Id>377</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="46" Menge="5" />
+      <Position Artikel_ID="29" Menge="9" />
+      <Position Artikel_ID="78" Menge="2" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2020</Jahr>
+    <Nummer>30</Nummer>
+    <Datum>2020-02-12</Datum>
+    <Kunde_Id>894</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="12" Menge="10" />
+      <Position Artikel_ID="86" Menge="4" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2020</Jahr>
+    <Nummer>31</Nummer>
+    <Datum>2020-02-12</Datum>
+    <Kunde_Id>290</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="4" Menge="2" />
+      <Position Artikel_ID="63" Menge="2" />
+      <Position Artikel_ID="49" Menge="7" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2020</Jahr>
+    <Nummer>32</Nummer>
+    <Datum>2020-02-12</Datum>
+    <Kunde_Id>880</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="98" Menge="9" />
+      <Position Artikel_ID="92" Menge="6" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2020</Jahr>
+    <Nummer>33</Nummer>
+    <Datum>2020-02-13</Datum>
+    <Kunde_Id>338</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="78" Menge="6" />
+      <Position Artikel_ID="54" Menge="3" />
+      <Position Artikel_ID="48" Menge="8" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2020</Jahr>
+    <Nummer>34</Nummer>
+    <Datum>2020-02-13</Datum>
+    <Kunde_Id>106</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="64" Menge="7" />
+      <Position Artikel_ID="66" Menge="8" />
+      <Position Artikel_ID="76" Menge="8" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2020</Jahr>
+    <Nummer>35</Nummer>
+    <Datum>2020-02-15</Datum>
+    <Kunde_Id>517</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="82" Menge="2" />
+      <Position Artikel_ID="91" Menge="3" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2020</Jahr>
+    <Nummer>36</Nummer>
+    <Datum>2020-02-16</Datum>
+    <Kunde_Id>724</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="12" Menge="10" />
+      <Position Artikel_ID="67" Menge="10" />
+      <Position Artikel_ID="91" Menge="7" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2020</Jahr>
+    <Nummer>37</Nummer>
+    <Datum>2020-02-18</Datum>
+    <Kunde_Id>766</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="90" Menge="6" />
+      <Position Artikel_ID="86" Menge="8" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2020</Jahr>
+    <Nummer>38</Nummer>
+    <Datum>2020-02-18</Datum>
+    <Kunde_Id>440</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="27" Menge="2" />
+      <Position Artikel_ID="43" Menge="3" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2020</Jahr>
+    <Nummer>39</Nummer>
+    <Datum>2020-02-20</Datum>
+    <Kunde_Id>694</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="54" Menge="6" />
+      <Position Artikel_ID="49" Menge="1" />
+      <Position Artikel_ID="21" Menge="2" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2020</Jahr>
+    <Nummer>40</Nummer>
+    <Datum>2020-02-20</Datum>
+    <Kunde_Id>624</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="87" Menge="5" />
+      <Position Artikel_ID="9" Menge="4" />
+      <Position Artikel_ID="93" Menge="7" />
+      <Position Artikel_ID="10" Menge="1" />
+      <Position Artikel_ID="53" Menge="8" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2020</Jahr>
+    <Nummer>41</Nummer>
+    <Datum>2020-02-22</Datum>
+    <Kunde_Id>665</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="77" Menge="7" />
+      <Position Artikel_ID="35" Menge="9" />
+      <Position Artikel_ID="80" Menge="10" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2020</Jahr>
+    <Nummer>42</Nummer>
+    <Datum>2020-02-22</Datum>
+    <Kunde_Id>100</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="3" Menge="3" />
+      <Position Artikel_ID="2" Menge="10" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2020</Jahr>
+    <Nummer>43</Nummer>
+    <Datum>2020-02-22</Datum>
+    <Kunde_Id>91</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="92" Menge="5" />
+      <Position Artikel_ID="52" Menge="6" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2020</Jahr>
+    <Nummer>44</Nummer>
+    <Datum>2020-02-24</Datum>
+    <Kunde_Id>781</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="96" Menge="5" />
+      <Position Artikel_ID="11" Menge="1" />
+      <Position Artikel_ID="42" Menge="6" />
+      <Position Artikel_ID="90" Menge="10" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2020</Jahr>
+    <Nummer>45</Nummer>
+    <Datum>2020-02-26</Datum>
+    <Kunde_Id>267</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="29" Menge="2" />
+      <Position Artikel_ID="57" Menge="8" />
+      <Position Artikel_ID="73" Menge="2" />
+      <Position Artikel_ID="90" Menge="3" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2020</Jahr>
+    <Nummer>46</Nummer>
+    <Datum>2020-02-28</Datum>
+    <Kunde_Id>568</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="17" Menge="5" />
+      <Position Artikel_ID="55" Menge="1" />
+      <Position Artikel_ID="95" Menge="5" />
+      <Position Artikel_ID="56" Menge="3" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2020</Jahr>
+    <Nummer>47</Nummer>
+    <Datum>2020-03-01</Datum>
+    <Kunde_Id>297</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="58" Menge="3" />
+      <Position Artikel_ID="98" Menge="8" />
+      <Position Artikel_ID="9" Menge="10" />
+      <Position Artikel_ID="8" Menge="3" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2020</Jahr>
+    <Nummer>48</Nummer>
+    <Datum>2020-03-01</Datum>
+    <Kunde_Id>241</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="97" Menge="9" />
+      <Position Artikel_ID="30" Menge="2" />
+      <Position Artikel_ID="28" Menge="10" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2020</Jahr>
+    <Nummer>49</Nummer>
+    <Datum>2020-03-01</Datum>
+    <Kunde_Id>8</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="61" Menge="6" />
+      <Position Artikel_ID="23" Menge="7" />
+      <Position Artikel_ID="3" Menge="2" />
+      <Position Artikel_ID="40" Menge="9" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2020</Jahr>
+    <Nummer>50</Nummer>
+    <Datum>2020-03-03</Datum>
+    <Kunde_Id>764</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="79" Menge="2" />
+      <Position Artikel_ID="29" Menge="5" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2020</Jahr>
+    <Nummer>51</Nummer>
+    <Datum>2020-03-04</Datum>
+    <Kunde_Id>506</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="20" Menge="10" />
+      <Position Artikel_ID="84" Menge="6" />
+      <Position Artikel_ID="89" Menge="2" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2020</Jahr>
+    <Nummer>52</Nummer>
+    <Datum>2020-03-06</Datum>
+    <Kunde_Id>96</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="69" Menge="3" />
+      <Position Artikel_ID="3" Menge="5" />
+      <Position Artikel_ID="90" Menge="2" />
+      <Position Artikel_ID="33" Menge="10" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2020</Jahr>
+    <Nummer>53</Nummer>
+    <Datum>2020-03-08</Datum>
+    <Kunde_Id>841</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="46" Menge="9" />
+      <Position Artikel_ID="85" Menge="4" />
+      <Position Artikel_ID="6" Menge="5" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2020</Jahr>
+    <Nummer>54</Nummer>
+    <Datum>2020-03-09</Datum>
+    <Kunde_Id>354</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="68" Menge="5" />
+      <Position Artikel_ID="86" Menge="6" />
+      <Position Artikel_ID="5" Menge="8" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2020</Jahr>
+    <Nummer>55</Nummer>
+    <Datum>2020-03-10</Datum>
+    <Kunde_Id>284</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="62" Menge="7" />
+      <Position Artikel_ID="49" Menge="5" />
+      <Position Artikel_ID="98" Menge="9" />
+      <Position Artikel_ID="70" Menge="2" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2020</Jahr>
+    <Nummer>56</Nummer>
+    <Datum>2020-03-10</Datum>
+    <Kunde_Id>562</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="92" Menge="6" />
+      <Position Artikel_ID="40" Menge="4" />
+      <Position Artikel_ID="89" Menge="7" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2020</Jahr>
+    <Nummer>57</Nummer>
+    <Datum>2020-03-12</Datum>
+    <Kunde_Id>737</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="33" Menge="5" />
+      <Position Artikel_ID="39" Menge="2" />
+      <Position Artikel_ID="42" Menge="6" />
+      <Position Artikel_ID="52" Menge="1" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2020</Jahr>
+    <Nummer>58</Nummer>
+    <Datum>2020-03-14</Datum>
+    <Kunde_Id>211</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="31" Menge="9" />
+      <Position Artikel_ID="21" Menge="8" />
+      <Position Artikel_ID="7" Menge="9" />
+      <Position Artikel_ID="74" Menge="2" />
+      <Position Artikel_ID="89" Menge="7" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2020</Jahr>
+    <Nummer>59</Nummer>
+    <Datum>2020-03-14</Datum>
+    <Kunde_Id>522</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="68" Menge="2" />
+      <Position Artikel_ID="77" Menge="7" />
+      <Position Artikel_ID="19" Menge="1" />
+      <Position Artikel_ID="32" Menge="9" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2020</Jahr>
+    <Nummer>60</Nummer>
+    <Datum>2020-03-14</Datum>
+    <Kunde_Id>343</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="2" Menge="1" />
+      <Position Artikel_ID="67" Menge="9" />
+      <Position Artikel_ID="26" Menge="1" />
+      <Position Artikel_ID="44" Menge="7" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2020</Jahr>
+    <Nummer>61</Nummer>
+    <Datum>2020-03-16</Datum>
+    <Kunde_Id>912</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="49" Menge="3" />
+      <Position Artikel_ID="10" Menge="8" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2020</Jahr>
+    <Nummer>62</Nummer>
+    <Datum>2020-03-17</Datum>
+    <Kunde_Id>155</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="19" Menge="6" />
+      <Position Artikel_ID="59" Menge="7" />
+      <Position Artikel_ID="58" Menge="9" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2020</Jahr>
+    <Nummer>63</Nummer>
+    <Datum>2020-03-18</Datum>
+    <Kunde_Id>522</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="36" Menge="9" />
+      <Position Artikel_ID="11" Menge="2" />
+      <Position Artikel_ID="69" Menge="7" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2020</Jahr>
+    <Nummer>64</Nummer>
+    <Datum>2020-03-19</Datum>
+    <Kunde_Id>66</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="61" Menge="3" />
+      <Position Artikel_ID="94" Menge="2" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2020</Jahr>
+    <Nummer>65</Nummer>
+    <Datum>2020-03-19</Datum>
+    <Kunde_Id>907</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="18" Menge="1" />
+      <Position Artikel_ID="34" Menge="10" />
+      <Position Artikel_ID="30" Menge="7" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2020</Jahr>
+    <Nummer>66</Nummer>
+    <Datum>2020-03-21</Datum>
+    <Kunde_Id>364</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="18" Menge="10" />
+      <Position Artikel_ID="23" Menge="10" />
+      <Position Artikel_ID="71" Menge="1" />
+      <Position Artikel_ID="92" Menge="4" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2020</Jahr>
+    <Nummer>67</Nummer>
+    <Datum>2020-03-21</Datum>
+    <Kunde_Id>788</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="98" Menge="6" />
+      <Position Artikel_ID="23" Menge="2" />
+      <Position Artikel_ID="3" Menge="4" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2020</Jahr>
+    <Nummer>68</Nummer>
+    <Datum>2020-03-21</Datum>
+    <Kunde_Id>161</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="77" Menge="8" />
+      <Position Artikel_ID="87" Menge="1" />
+      <Position Artikel_ID="96" Menge="5" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2020</Jahr>
+    <Nummer>69</Nummer>
+    <Datum>2020-03-22</Datum>
+    <Kunde_Id>392</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="55" Menge="2" />
+      <Position Artikel_ID="67" Menge="6" />
+      <Position Artikel_ID="14" Menge="7" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2020</Jahr>
+    <Nummer>70</Nummer>
+    <Datum>2020-03-23</Datum>
+    <Kunde_Id>580</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="79" Menge="10" />
+      <Position Artikel_ID="89" Menge="2" />
+      <Position Artikel_ID="54" Menge="2" />
+      <Position Artikel_ID="17" Menge="4" />
+      <Position Artikel_ID="35" Menge="1" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2020</Jahr>
+    <Nummer>71</Nummer>
+    <Datum>2020-03-24</Datum>
+    <Kunde_Id>245</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="80" Menge="5" />
+      <Position Artikel_ID="87" Menge="10" />
+      <Position Artikel_ID="25" Menge="7" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2020</Jahr>
+    <Nummer>72</Nummer>
+    <Datum>2020-03-25</Datum>
+    <Kunde_Id>45</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="36" Menge="10" />
+      <Position Artikel_ID="3" Menge="2" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2020</Jahr>
+    <Nummer>73</Nummer>
+    <Datum>2020-03-27</Datum>
+    <Kunde_Id>38</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="70" Menge="10" />
+      <Position Artikel_ID="86" Menge="2" />
+      <Position Artikel_ID="94" Menge="1" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2020</Jahr>
+    <Nummer>74</Nummer>
+    <Datum>2020-03-29</Datum>
+    <Kunde_Id>357</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="96" Menge="1" />
+      <Position Artikel_ID="23" Menge="9" />
+      <Position Artikel_ID="50" Menge="10" />
+      <Position Artikel_ID="80" Menge="10" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2020</Jahr>
+    <Nummer>75</Nummer>
+    <Datum>2020-03-29</Datum>
+    <Kunde_Id>901</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="86" Menge="4" />
+      <Position Artikel_ID="91" Menge="10" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2020</Jahr>
+    <Nummer>76</Nummer>
+    <Datum>2020-03-31</Datum>
+    <Kunde_Id>956</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="15" Menge="1" />
+      <Position Artikel_ID="83" Menge="4" />
+      <Position Artikel_ID="65" Menge="5" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2020</Jahr>
+    <Nummer>77</Nummer>
+    <Datum>2020-04-02</Datum>
+    <Kunde_Id>431</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="24" Menge="4" />
+      <Position Artikel_ID="17" Menge="2" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2020</Jahr>
+    <Nummer>78</Nummer>
+    <Datum>2020-04-03</Datum>
+    <Kunde_Id>429</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="59" Menge="7" />
+      <Position Artikel_ID="99" Menge="8" />
+      <Position Artikel_ID="83" Menge="2" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2020</Jahr>
+    <Nummer>79</Nummer>
+    <Datum>2020-04-05</Datum>
+    <Kunde_Id>534</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="71" Menge="8" />
+      <Position Artikel_ID="25" Menge="8" />
+      <Position Artikel_ID="2" Menge="3" />
+      <Position Artikel_ID="97" Menge="2" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2020</Jahr>
+    <Nummer>80</Nummer>
+    <Datum>2020-04-07</Datum>
+    <Kunde_Id>791</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="68" Menge="4" />
+      <Position Artikel_ID="73" Menge="4" />
+      <Position Artikel_ID="21" Menge="7" />
+      <Position Artikel_ID="86" Menge="9" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2020</Jahr>
+    <Nummer>81</Nummer>
+    <Datum>2020-04-08</Datum>
+    <Kunde_Id>560</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="48" Menge="10" />
+      <Position Artikel_ID="46" Menge="7" />
+      <Position Artikel_ID="65" Menge="10" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2020</Jahr>
+    <Nummer>82</Nummer>
+    <Datum>2020-04-09</Datum>
+    <Kunde_Id>89</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="49" Menge="3" />
+      <Position Artikel_ID="85" Menge="5" />
+      <Position Artikel_ID="7" Menge="7" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2020</Jahr>
+    <Nummer>83</Nummer>
+    <Datum>2020-04-10</Datum>
+    <Kunde_Id>558</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="57" Menge="10" />
+      <Position Artikel_ID="80" Menge="5" />
+      <Position Artikel_ID="52" Menge="8" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2020</Jahr>
+    <Nummer>84</Nummer>
+    <Datum>2020-04-11</Datum>
+    <Kunde_Id>611</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="75" Menge="8" />
+      <Position Artikel_ID="35" Menge="8" />
+      <Position Artikel_ID="56" Menge="1" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2020</Jahr>
+    <Nummer>85</Nummer>
+    <Datum>2020-04-12</Datum>
+    <Kunde_Id>734</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="47" Menge="4" />
+      <Position Artikel_ID="45" Menge="9" />
+      <Position Artikel_ID="95" Menge="9" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2020</Jahr>
+    <Nummer>86</Nummer>
+    <Datum>2020-04-13</Datum>
+    <Kunde_Id>345</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="47" Menge="2" />
+      <Position Artikel_ID="46" Menge="7" />
+      <Position Artikel_ID="34" Menge="4" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2020</Jahr>
+    <Nummer>87</Nummer>
+    <Datum>2020-04-15</Datum>
+    <Kunde_Id>672</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="40" Menge="10" />
+      <Position Artikel_ID="38" Menge="4" />
+      <Position Artikel_ID="44" Menge="1" />
+      <Position Artikel_ID="12" Menge="1" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2020</Jahr>
+    <Nummer>88</Nummer>
+    <Datum>2020-04-16</Datum>
+    <Kunde_Id>436</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="38" Menge="10" />
+      <Position Artikel_ID="75" Menge="7" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2020</Jahr>
+    <Nummer>89</Nummer>
+    <Datum>2020-04-18</Datum>
+    <Kunde_Id>22</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="63" Menge="1" />
+      <Position Artikel_ID="41" Menge="1" />
+      <Position Artikel_ID="76" Menge="6" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2020</Jahr>
+    <Nummer>90</Nummer>
+    <Datum>2020-04-20</Datum>
+    <Kunde_Id>781</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="40" Menge="2" />
+      <Position Artikel_ID="51" Menge="1" />
+      <Position Artikel_ID="88" Menge="1" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2020</Jahr>
+    <Nummer>91</Nummer>
+    <Datum>2020-04-22</Datum>
+    <Kunde_Id>65</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="93" Menge="10" />
+      <Position Artikel_ID="17" Menge="5" />
+      <Position Artikel_ID="64" Menge="4" />
+      <Position Artikel_ID="42" Menge="2" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2020</Jahr>
+    <Nummer>92</Nummer>
+    <Datum>2020-04-24</Datum>
+    <Kunde_Id>798</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="13" Menge="6" />
+      <Position Artikel_ID="40" Menge="6" />
+      <Position Artikel_ID="59" Menge="6" />
+      <Position Artikel_ID="43" Menge="5" />
+      <Position Artikel_ID="88" Menge="3" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2020</Jahr>
+    <Nummer>93</Nummer>
+    <Datum>2020-04-26</Datum>
+    <Kunde_Id>266</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="83" Menge="9" />
+      <Position Artikel_ID="52" Menge="3" />
+      <Position Artikel_ID="4" Menge="6" />
+      <Position Artikel_ID="96" Menge="10" />
+      <Position Artikel_ID="17" Menge="1" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2020</Jahr>
+    <Nummer>94</Nummer>
+    <Datum>2020-04-28</Datum>
+    <Kunde_Id>242</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="80" Menge="10" />
+      <Position Artikel_ID="16" Menge="5" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2020</Jahr>
+    <Nummer>95</Nummer>
+    <Datum>2020-04-29</Datum>
+    <Kunde_Id>9</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="18" Menge="4" />
+      <Position Artikel_ID="37" Menge="2" />
+      <Position Artikel_ID="26" Menge="9" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2020</Jahr>
+    <Nummer>96</Nummer>
+    <Datum>2020-04-30</Datum>
+    <Kunde_Id>818</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="85" Menge="6" />
+      <Position Artikel_ID="48" Menge="3" />
+      <Position Artikel_ID="97" Menge="10" />
+      <Position Artikel_ID="91" Menge="5" />
+      <Position Artikel_ID="55" Menge="5" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2020</Jahr>
+    <Nummer>97</Nummer>
+    <Datum>2020-04-30</Datum>
+    <Kunde_Id>479</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="54" Menge="10" />
+      <Position Artikel_ID="66" Menge="2" />
+      <Position Artikel_ID="4" Menge="1" />
+      <Position Artikel_ID="40" Menge="3" />
+      <Position Artikel_ID="24" Menge="3" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2020</Jahr>
+    <Nummer>98</Nummer>
+    <Datum>2020-05-02</Datum>
+    <Kunde_Id>564</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="97" Menge="1" />
+      <Position Artikel_ID="64" Menge="2" />
+      <Position Artikel_ID="38" Menge="5" />
+      <Position Artikel_ID="48" Menge="6" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2020</Jahr>
+    <Nummer>99</Nummer>
+    <Datum>2020-05-03</Datum>
+    <Kunde_Id>684</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="52" Menge="4" />
+      <Position Artikel_ID="63" Menge="10" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2020</Jahr>
+    <Nummer>100</Nummer>
+    <Datum>2020-05-04</Datum>
+    <Kunde_Id>143</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="5" Menge="3" />
+      <Position Artikel_ID="6" Menge="1" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2020</Jahr>
+    <Nummer>101</Nummer>
+    <Datum>2020-05-04</Datum>
+    <Kunde_Id>463</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="2" Menge="3" />
+      <Position Artikel_ID="28" Menge="8" />
+    </Positionen>
+  </Rechnung>
+  <Rechnung>
+    <Jahr>2020</Jahr>
+    <Nummer>102</Nummer>
+    <Datum>2020-05-04</Datum>
+    <Kunde_Id>654</Kunde_Id>
+    <Positionen>
+      <Position Artikel_ID="66" Menge="9" />
+      <Position Artikel_ID="31" Menge="10" />
+    </Positionen>
+  </Rechnung>
+</Rechnungen>
